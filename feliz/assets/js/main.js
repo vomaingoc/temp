@@ -23,7 +23,8 @@ $( document ).ready(function() {
         nav:true,
         responsive:{
             0:{
-                items:2
+                items:2,
+                margin: 20,
             },
             600:{
                 items:3
@@ -33,4 +34,8 @@ $( document ).ready(function() {
             }
         }
     })
+
+    $(".navbar-toggle" ).click(function() {
+        $('body').toggleClass('blockp');
+    });
 });

@@ -81,6 +81,8 @@ img {
                 background: none;
                 padding: 5px;
                 padding-right: 15%;
+                padding-top: 3em;
+                padding-bottom: 3em;
             }
 
             .txt {
@@ -265,16 +267,23 @@ img {
         .slide-01 {
             .item {
                 text-align: center;
+                @include mdevice(mobile) {
+                     padding-left: 10px;
+                     padding-right: 10px;
+                }
             }
         }
     }
 
     &-5 {
         padding: 4em 0;
-        background-image: url("../images/section-5-bg.jpg");
-        background-size: cover;
+        background-image:
+        url("../images/section-5-bg-2.jpg"),
+        url("../images/section-5-bg-3.jpg"),;
+         background-size: 80% auto, 80% auto;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top right, bottom left;
+        background-color: #ebe8e8;
         @include mdevice(mobile) {
             padding: 1em 0;
         }
@@ -317,6 +326,10 @@ img {
         .list-project {
             .item {
                 text-align: center;
+                @include mdevice(mobile) {
+                     padding-left: 10px;
+                     padding-right: 10px;
+                }
 
                 &__img {
                     display: inline-block;
@@ -442,21 +455,50 @@ img {
     color: $color-text-1;
     font-size: 1.1em;
     padding: 4em 0;
+    padding-top: 2em;
     @include mdevice(mobile){
         font-size: 0.9em;
     }
+    .posr    {
+        position: relative;
+    }
+.line-h{
+    position: absolute;;
+    height: 170px;
+    width: 1px;
+    display: inline-block;
+    background-color: #eee;
+    top: 20px;
 
+    &.line001{
+        left: 30%;
+        @include mdevice(mobile){
+            display: none;
+        }
+    }
+    &.line002{
+        left: 55%;
+        @include mdevice(mobile){
+             left: 49.5%;
+             height: 140px;
+             top: 0;
+        }
+    }
+}
     .copyright,
     .txt {
         color: $color-text-1;
         white-space: pre-line;
+        width: 300px;
+        max-width: 100%;
         @include mdevice(mobile){
             white-space: normal;
+            width: 100%;
         }
     }
 
     .copyright {
-        margin-top: 5em;
+        margin-top: 7em;
         @include mdevice(mobile){
             margin-top: 1em;
         }
@@ -499,6 +541,36 @@ img {
 
         a {
             color: $color-text-1;
+        }
+    }
+}
+
+.navbar-toggle{
+    @include mdevice(mobile){
+        top: 5px;
+    }
+}
+body.blockp{
+    overflow: hidden;
+
+    .p-content{
+         filter:blur(1px);
+    }
+    .icon-bar{
+        transition: all 0.3s;
+        &:nth-child(2){
+            transform: rotate(45deg);
+            margin-left: 0px;
+             top: 13px;
+            position: absolute;
+        }
+
+        &:nth-child(3){
+            transform: rotate(-45deg);
+            //margin-left: 5px;
+        }
+        &:last-child{
+            opacity: 0;
         }
     }
 }

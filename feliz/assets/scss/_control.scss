@@ -67,7 +67,7 @@
 
     .owl-next{
         position: absolute;
-        left: 0;
+        left: -16px;
         width: 30px;
         height: 30px;
         background-image: url(../images/prev.png);
@@ -76,12 +76,19 @@
     }
     .owl-prev{
         position: absolute;
-        right: 0;
+        right: -16px;
         width: 30px;
         height: 30px;
         background-image: url(../images/next.png);
         background-size: 100% 100%;
         font-size: 0;
+    }
+
+    @include mdevice(mobile) {
+        .owl-prev, .owl-next{
+            width: 18px;
+            height: 20px;
+        }
     }
 
 }
