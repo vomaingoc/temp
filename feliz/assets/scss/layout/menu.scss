@@ -1,0 +1,39 @@
+.p-header{
+  background-image: url("../images/header-bg.jpg");
+  background-size: 100% auto;
+  padding: 2em 0;
+}
+.navbar{
+    border-radius: 0;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 0;
+    background-color: transparent;
+}
+.navbar-brand{
+  height: auto;
+  padding: 0;
+}
+
+.navbar-nav{
+  padding-top: 2.3em;
+  padding-left: 4em
+}
+
+.nav>li>a{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.3em;
+}
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>.active>a:hover{
+  background-color: transparent;
+  color: $site-color-1;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+  background-color: transparent;
+}

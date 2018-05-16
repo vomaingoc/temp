@@ -1,0 +1,35 @@
+// media screen
+$xl: 1200px;
+$lg: 1024px;
+$md: 768px;
+// padding depen on screen
+$pxl: 32px;
+$plg: 24px;
+$pmd: 16px;
+$psm: 8px;
+// container max width
+$maxWidthContent:1200px;
+// content page
+$widthMenu: 300px;
+$widthBtnAdd:56px + 24px;
+$heightHeader: 64px;
+// color
+$site-color-1: #017fbd;
+$site-color-2: #6dc9e9;
+$site-color-3: #eceff1;
+$site-color-4: #3F51B5;
+$site-color-5: #E1F5FD;
+$site-color-6: #4152B4;
+$color-text-1: #6D6E71;
+// color label
+$colors-lbl: ( yellow : #FFC108, green: #28A745, blue: #18A2B9, pink: #DC3545);
+
+
+//classList
+.ttu{
+    text-transform: uppercase;
+}
+.tac{
+    text-align: center;
+}
+$site-border-color: #e0e0e0;
