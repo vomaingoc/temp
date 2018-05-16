@@ -59,10 +59,8 @@ img {
         .section-content {
             @include mdevice(desktop) {
                 position: absolute;
-                left: 5em;
-                top: 3em;
-                width: 100%;
-                height: 100%;
+                left: 20.5%;
+                top:0em;
             }
             @include mdevice(mobile) {
                  background-image: url("../images/section-1-bg-img-mobile-2.jpg");
@@ -73,22 +71,21 @@ img {
         }
 
         .wel {
-            width: 400px;
+            width: 390px;
             max-width: 100%;
-            background-color: rgba(255,255,255,.8);
+            //background-color: rgba(255,255,255,.8);
             padding: 15px;
             @include mdevice(mobile){
                 background: none;
                 padding: 5px;
-                padding-right: 15%;
                 padding-top: 3em;
                 padding-bottom: 3em;
             }
 
             .txt {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 margin-top: 1em;
-                line-height: 1.8;
+                line-height: 1.7;
                 @include mdevice(mobile){
                     font-size: 1em;
                 }
@@ -99,7 +96,7 @@ img {
             font-weight: bold;
             text-transform: uppercase;
             color: $site-color-1;
-            font-size: 2.3em;
+            font-size: 2.2em;
             @include mdevice(mobile){
                 font-size: 1.5em;
             }

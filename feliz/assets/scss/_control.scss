@@ -73,6 +73,7 @@
         background-image: url(../images/prev.png);
         background-size: 100% 100%;
         font-size: 0;
+        pointer-events: auto;
     }
     .owl-prev{
         position: absolute;
@@ -82,6 +83,7 @@
         background-image: url(../images/next.png);
         background-size: 100% 100%;
         font-size: 0;
+        pointer-events: auto;
     }
 
     @include mdevice(mobile) {
