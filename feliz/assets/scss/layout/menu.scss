@@ -1,39 +1,60 @@
-.p-header{
-  background-image: url("../images/header-bg.jpg");
-  background-size: 100% auto;
-  padding: 2em 0;
-}
-.navbar{
-    border-radius: 0;
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 0;
-    border: 0;
-    background-color: transparent;
-}
-.navbar-brand{
-  height: auto;
-  padding: 0;
-}
+.p-header {
+    background-image: url("../images/header-bg.jpg");
+    background-size: 100% auto;
+    padding: 2em 0;
+    @include mdevice(mobile){
+        padding: 0;
+        background-image: none;
+        border-bottom: 1px solid #ddd;
+    }
 
-.navbar-nav{
-  padding-top: 2.3em;
-  padding-left: 4em
-}
+    .navbar {
+        border-radius: 0;
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 0;
+        border: 0;
+        background-color: transparent;
+    }
+ .navbar-toggle{
+     border: none;
+     background: none !important
+ }
+    .navbar-brand {
+        height: auto;
+        padding: 0;
 
-.nav>li>a{
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.3em;
-}
-.navbar .navbar-nav>.active>a,
-.navbar .navbar-nav>.active>a:focus,
-.navbar .navbar-nav>.active>a:hover{
-  background-color: transparent;
-  color: $site-color-1;
-}
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.open>a:hover{
-  background-color: transparent;
+        @include mdevice(mobile){
+             img{
+                 height: 55px;
+             }
+        }
+    }
+
+    .navbar-nav {
+        padding-top: 2.3em;
+        padding-left: 4em;
+        @include mdevice(mobile){
+            padding: 0;
+        }
+    }
+
+    .nav > li > a {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.3em;
+    }
+
+    .navbar .navbar-nav > .active > a,
+    .navbar .navbar-nav > .active > a:focus,
+    .navbar .navbar-nav > .active > a:hover {
+        background-color: transparent;
+        color: $site-color-1;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+        background-color: transparent;
+    }
 }

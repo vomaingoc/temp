@@ -1,2 +1,93 @@
 //control
- 
+
+.nav-tabs {
+    border-bottom: none;
+    font-size: 1.1em;
+    width: auto;
+    min-width: 50%;
+    padding-left: 15px;
+    float: right;
+    @include mdevice(mobile) {
+      font-size: 0.9em;
+      padding-left: 0;
+    }
+
+    @include mdevice(mobile) {
+      float: none;
+      width: 100%;
+    }
+    li {
+        &+li{
+            &:before {
+                content: '|';
+                display: inline-block;
+                color: #eee;
+                float: left;
+                margin-top: 12px;
+                opacity: .8;
+            }
+        }
+        a {
+            border: none !important;
+            color: #fff;
+            background-color: transparent !important;
+            font-size: 1.2em;
+            padding-left: 25px;
+            padding-right: 25px;
+            @include mdevice(mobile) {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+
+            &:focus{
+                color: #fff;
+            }
+        }
+&:first-child{
+    a{
+        padding-left: 0;
+    }
+}
+        &.active {
+            a {
+                color: $site-color-1 !important;
+            }
+        }
+    }
+}
+
+.owl-carousel .owl-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    pointer-events: none;
+    opacity: .8;
+
+    .owl-next{
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/prev.png);
+        background-size: 100% 100%;
+        font-size: 0;
+    }
+    .owl-prev{
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/next.png);
+        background-size: 100% 100%;
+        font-size: 0;
+    }
+
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev{
+
+}
