@@ -1,11 +1,11 @@
 // fixed-top-animated-menu.1.0.js
-
+var spacetop = 55;
 $(document).on('click', 'ul.scrollspy a', function (event) {
     "use strict";
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 117
+        scrollTop: $($.attr(this, 'href')).offset().top - spacetop
     }, 500);
 });
 $(document).on('click', 'a.anchorlink', function (event) {
@@ -13,7 +13,7 @@ $(document).on('click', 'a.anchorlink', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 117
+        scrollTop: $($.attr(this, 'href')).offset().top - spacetop
     }, 500);
 });
 //changing color of menu elements when scrolling

@@ -6,8 +6,12 @@
     padding: 0;
     background-image: none;
     border-bottom: 1px solid #ddd;
-  }
+    background-color: #fff;
 
+      position: fixed;
+      width: 100%;
+      z-index: 9;
+  }
   .navbar {
     border-radius: 0;
     position: relative;
@@ -15,6 +19,9 @@
     margin-bottom: 0;
     border: 0;
     background-color: transparent;
+    position: relative;
+
+
   }
 
   .navbar-toggle {
@@ -25,6 +32,9 @@
   .navbar-brand {
     height: auto;
     padding: 0;
+    img{
+        height: 116px;
+    }
     @include mdevice(mobile) {
       img {
         height: 55px;
@@ -65,8 +75,11 @@
   }
 }
 
-.navbar-header {
-  position: relative;
+
+.p-content{
+    @include mdevice(mobile) {
+        padding-top: 55px;
+    }
 }
 
 #navbar {
@@ -83,10 +96,36 @@
     height: calc(100vh - 50px) !important;
     opacity: 0;
     left: 100%;
+    display: block !important;
   }
 
   &.collapse.in {
     opacity: 1;
     left: 30%;
+  }
+}
+
+.navbar-brand img{
+
+}
+.sticky {
+  width: 100%;
+  z-index: 9;
+.navbar-brand img, .nav.navbar-nav{
+  transition: all 0.3s;
+}
+  li.active{
+    a{
+      color: $site-color-1
+    }
+  }
+  &.is-sticky{
+    background-color: rgba(255,255,255,0.96);
+    .navbar-brand img{
+      height: 60px;
+    }
+    .nav.navbar-nav{
+      padding-top: 0.5em;
+    }
   }
 }

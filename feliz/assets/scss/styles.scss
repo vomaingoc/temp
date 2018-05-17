@@ -82,6 +82,7 @@ img {
       @include mdevice(mobile) {
         background: none;
         padding: 3em 5px;
+        padding-right: 15%;
       }
 
       .txt {
@@ -555,10 +556,10 @@ img {
 }
 
 body.blockp {
-  overflow: hidden;
+  //overflow: hidden;
 
   .p-content {
-    filter:blur(1px);
+    //filter:blur(1px);
   }
 
   .icon-bar {

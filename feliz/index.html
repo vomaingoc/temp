@@ -8,58 +8,47 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <title>Feliz</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap3/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css?id=0">
+    <link rel="stylesheet" href="assets/plugins/css/animate.min.css">
 </head>
 
 <body ng-app="myApp">
     <div id="wrapper" ng-controller="mainController">
-        <div class="p-header">
+        <div class="p-header anchor" id="home">
+          <div class="sticky">
             <nav class="navbar navbar-default" ng-controller="menuController">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="openmenu">
                           <span class="sr-only">Toggle navigation</span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img class="wow zoomIn"  src="assets/images/logo.png" alt=""></a>
                     </div>
-                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="">Our product</a></li>
-                            <!-- <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our product <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li> -->
-                            <li><a href="">Our client</a></li>
-                            <li><a href="">Our project</a></li>
-                            <li><a href="#">Contact us</a></li>
-
-
-                        </ul>
-                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                       <ul class="nav navbar-nav scrollspy">
+                           <li data-anchor="home" class="active"><a href="#home" >Home</a></li>
+                           <li data-anchor="aboutus"><a href="#aboutus"  >About us</a></li>
+                           <li data-anchor="ourproduct"><a href="#ourproduct" >Our product</a></li>
+                           <li data-anchor="ourclient"><a href="#ourclient" >Our client</a></li>
+                           <li data-anchor="ourproject"><a href="#ourproject" >Our project</a></li>
+                           <li data-anchor="contactus"><a href="#contactus" >Contact us</a></li>
+                       </ul>
+                   </div>
                 </div>
             </nav>
+        </div>
         </div>
         <div class="p-content">
             <div class="section-1">
                 <div class="section-content">
                     <div class="container">
                         <div class="wel">
-                            <h2 class="h2">Welcome to FELIZ</h2>
-                            <div class="txt">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years.
+                            <h2 class="h2 wow fadeInUp">Welcome to FELIZ</h2>
+                            <div class="txt  wow fadeInUp">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years.
                             </div>
                         </div>
                     </div>
@@ -68,15 +57,15 @@
                 <img class="img-sm-1 only-show-mobile" src="assets/images/section-1-img-mobile.jpg" alt="" width="100%">
             </div>
 
-            <div class="section-2">
+              <div class="anchor section-2" id="aboutus">
                 <div class="container">
                     <div class="row row-1">
                         <div class="col col-md-7">
-                            <img src="assets/images/section-2-img.jpg" alt="">
+                            <img  class="wow zoomIn"  src="assets/images/section-2-img.jpg" alt="">
                         </div>
                         <div class="col col-md-5">
-                            <h2 class="h2 line">About Us</h2>
-                            <div class="txt1">
+                            <h2 class="h2 line  wow fadeInUp">About Us</h2>
+                            <div class="txt1  wow fadeInUp">
                                 <p>The ship set ground on the shore of this uncharted desert isle with gilligan the skipper too the millionaire and his wife come and knock on our door we have been waiting for you aati where the kose.</p>
                                 <p>Three is company too these days are all happy and free these days are all of share them with me oh baby have been waiting for kose.</p>
                             </div>
@@ -85,7 +74,7 @@
                 </div>
                 <div class="container">
                     <div class="row-2">
-                        <div class="cols-20">
+                        <div class="cols-20  wow fadeInUp">
                             <img src="assets/images/section-2-icon.jpg" alt="">
                             <h2 class="h2">Strategy Planning</h2>
                             <span class="block"><span class="line"></span></span>
@@ -93,7 +82,7 @@
                                 Three is company too these days are
                             </p>
                         </div>
-                        <div class="cols-20">
+                        <div class="cols-20  wow fadeInUp">
                             <img src="assets/images/section-2-icon-04.jpg" alt="">
                             <h2 class="h2">Creative Design</h2>
                             <span class="block"><span class="line"></span></span>
@@ -101,7 +90,7 @@
                                 Three is company too these days are
                             </p>
                         </div>
-                        <div class="cols-20">
+                        <div class="cols-20 wow fadeInUp">
                             <img src="assets/images/section-2-icon-05.jpg" alt="">
                             <h2 class="h2">Mobile & Website
                             Development
@@ -111,7 +100,7 @@
                                 Three is company too these days are
                             </p>
                         </div>
-                        <div class="cols-20">
+                        <div class="cols-20 wow fadeInUp">
                             <img src="assets/images/section-2-icon-06.jpg" alt="">
                             <h2 class="h2">Event Management</h2>
                             <span class="block"><span class="line"></span></span>
@@ -119,7 +108,7 @@
                                 Three is company too these days are
                             </p>
                         </div>
-                        <div class="cols-20">
+                        <div class="cols-20 wow fadeInUp">
                             <img src="assets/images/section-2-icon-07.jpg" alt="">
                             <h2 class="h2">Social & Influencers
                             Management</h2>
@@ -131,30 +120,30 @@
                     </div>
                 </div>
             </div>
-            <div class="section-3">
-                <h2 class=" title-page line tac white">
+            <div class="anchor section-3" id="ourproduct">
+                <h2 class=" title-page line tac white  wow fadeInUp">
             Our product
         </h2>
                 <div class="container">
-                    <p class="txt">Lorem Ipsum is simply dummy text of the printing
+                    <p class="txt  wow fadeInUp">Lorem Ipsum is simply dummy text of the printing
                        and typesetting industry.</p>
 
                     <div class="list-img">
-                        <a href="">
+                        <a class=" wow zoomIn" href="">
               <img src="assets/images/section-2-img-03.png" alt="">
             </a>
-                        <a href="">
+                        <a class=" wow zoomIn" href="">
               <img src="assets/images/section-2-img-02.png" alt="">
             </a>
                     </div>
                 </div>
             </div>
-            <div class="section-4">
-                <h2 class="h2 line tac">
+              <div class="anchor section-4" id="ourclient">
+                <h2 class="h2 line tac  wow fadeInUp">
             Our client
         </h2>
                 <div class="container">
-                    <p class="txt">The ship set ground on the shore of this uncharted desert isle with gilligan the skipper too the millionaire
+                    <p class="txt  wow fadeInUp">The ship set ground on the shore of this uncharted desert isle with gilligan the skipper too the millionaire
                         isle with gilligan the skipper too the millionaire</p>
 
 
@@ -173,13 +162,13 @@
                     </div>
                 </div>
             </div>
-            <div class="section-5">
-                <h2 class="title-page  line tac">
+              <div class="anchor section-5" id="ourproject">
+                <h2 class="title-page  line tac  wow fadeInUp">
             Our project
         </h2>
                 <div class="container posr img-bg-2">
 
-                    <p class="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <p class="txt  wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                     <div class="row-2 list-project">
                         <div class="owl-carousel slide-02">
@@ -248,27 +237,27 @@
                             <div class="tab__content">
                                 <div class="row">
                                     <div class="col col-md-6 hide-mobile">
-                                        <div class="img-lg">
+                                        <div class="img-lg wow fadeInLeft">
                                             <img src="assets/images/section-6-img.jpg" alt="">
                                         </div>
                                     </div>
 
                                     <div class="col col-md-6 cols-02">
                                         <div class="txt">
-                                            <span class="line2"><span></span></span>
-                                            <h2 class="h2">S.hub</h2>
-                                            <div class="txt2">
+                                            <span class="line2 wow fadeInRight"><span></span></span>
+                                            <h2 class="h2 wow fadeInUp">S.hub</h2>
+                                            <div class="txt2 wow fadeInUp">
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                                                 survived not only five centuries.
                                             </div>
-                                            <span class="line2 line3"><span></span></span>
+                                            <span class="line2 line3 wow fadeInRight"><span></span></span>
                                         </div>
                                         <div class="img-lg-2 only-show-mobile">
                                             <img src="assets/images/section-6-img.jpg" alt="">
                                         </div>
                                         <div class="img-sm">
-                                            <img src="assets/images/section-6-img-03.jpg" alt="">
-                                            <img src="assets/images/section-6-img-02.jpg" alt="">
+                                            <img class="wow fadeInRight" src="assets/images/section-6-img-03.jpg" alt="">
+                                            <img class="wow fadeInRight" src="assets/images/section-6-img-02.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -375,7 +364,7 @@
 
         <div class="p-footer"><div class="container">
             <div class="footer-logo">
-                <img src="assets/images/logo.png" alt="">
+                <img src="assets/images/logo.png" alt=""  class="wow zoomIn" >
             </div>
         </div>
             <div class="container posr">
@@ -441,7 +430,7 @@
     <script src="assets/plugins/js/jquery.min.js"></script>
     <!-- <script src="../assets/plugins/js/jquery-ui.min.js"></script> -->
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap3/bootstrap.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
@@ -454,6 +443,9 @@
     <script src="assets/plugins/owl.carousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="assets/plugins/owl.carousel/owl.carousel.min.css">
     <script src="assets/js/main.js?id=0"></script>
+    <script src="assets/plugins/js/scrollspy.js"></script>
+    <script src="assets/plugins/js/jquery.sticky.js"></script>
+    <script src="assets/plugins/js/wow.min.js"></script>
 </body>
 
 </html>

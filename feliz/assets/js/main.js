@@ -1,5 +1,15 @@
 
 $( document ).ready(function() {
+  $(".isDesktop .sticky").sticky({ topSpacing: 0 });
+
+ $(".isMobile .nav>li>a").on("click", function(){
+     $(".navbar-toggle" ).click();
+ });
+
+ 
+  if($('html').hasClass('isDesktop')){
+    new WOW().init();
+  };
     $('.slide-01').owlCarousel({
         loop:true,
         margin:10,

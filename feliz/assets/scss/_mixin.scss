@@ -95,60 +95,59 @@
     }
 }
 
-@mixin mpadding {
-    @include mscreen(lg) {
-        padding-left: $plg;
-        padding-right: $plg;
-    }
-    @include mscreen(md) {
-        padding-left: $pmd;
-        padding-right: $pmd;
-    }
-    @include mscreen(sm) {
-        padding-left: $psm;
-        padding-right: $psm;
-    }
-}
+// @mixin mpadding {
+//     @include mscreen(lg) {
+//         padding-left: $plg;
+//         padding-right: $plg;
+//     }
+//     @include mscreen(md) {
+//         padding-left: $pmd;
+//         padding-right: $pmd;
+//     }
+//     @include mscreen(sm) {
+//         padding-left: $psm;
+//         padding-right: $psm;
+//     }
+// }
 
-@mixin mpos($x) {
-    //@if $x==top{
-        @include mscreen(lg) {
-            #{$x}: $plg;
-        }
-        @include mscreen(md) {
-            #{$x}: $pmd;
-        }
-        @include mscreen(sm) {
-            #{$x}: $psm;
-        }
-}
+// @mixin mpos($x) {
+//         @include mscreen(lg) {
+//             #{$x}: $plg;
+//         }
+//         @include mscreen(md) {
+//             #{$x}: $pmd;
+//         }
+//         @include mscreen(sm) {
+//             #{$x}: $psm;
+//         }
+// }
 
-@mixin mmgrow {
-    @include mscreen(lg) {
-        margin-left: -$plg;
-        margin-right: -$plg;
-    }
-    @include mscreen(md) {
-        margin-left: -$pmd;
-        margin-right: -$pmd;
-    }
-    @include mscreen(sm) {
-        margin-left: -$psm;
-        margin-right: -$psm;
-    }
-}
+// @mixin mmgrow {
+//     @include mscreen(lg) {
+//         margin-left: -$plg;
+//         margin-right: -$plg;
+//     }
+//     @include mscreen(md) {
+//         margin-left: -$pmd;
+//         margin-right: -$pmd;
+//     }
+//     @include mscreen(sm) {
+//         margin-left: -$psm;
+//         margin-right: -$psm;
+//     }
+// }
 
-@mixin content-padding {
-    @include mscreen(lg) {
-        padding: $plg;
-    }
-    @include mscreen(md) {
-        padding: $pmd;
-    }
-    @include mscreen(sm) {
-        padding: $psm;
-    }
-}
+// @mixin content-padding {
+//     @include mscreen(lg) {
+//         padding: $plg;
+//     }
+//     @include mscreen(md) {
+//         padding: $pmd;
+//     }
+//     @include mscreen(sm) {
+//         padding: $psm;
+//     }
+// }
 
 @mixin scrollbar-xs {
     &::-webkit-scrollbar {
@@ -189,37 +188,37 @@
 @mixin brs($px){
     border-radius: $px;
 }
-@mixin swipe{
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/swipe.png);
-    display: inline-block;
-    background-size: 100%;
-}
+// @mixin swipe{
+//     content: "";
+//     width: 50px;
+//     height: 50px;
+//     background-image: url(../images/swipe.png);
+//     display: inline-block;
+//     background-size: 100%;
+// }
 
-@for $i from 1 through 12{
-    .cols#{$i}{
-        width: 100% / 12 * $i;
-        @include mdevice(mobile){
-            width: 100%;
-        }
-        @include mdevice(desktop){
-            float: left;
-        }
-        @include mpadding;
-    }
-}
+// @for $i from 1 through 12{
+//     .cols#{$i}{
+//         width: 100% / 12 * $i;
+//         @include mdevice(mobile){
+//             width: 100%;
+//         }
+//         @include mdevice(desktop){
+//             float: left;
+//         }
+//         @include mpadding;
+//     }
+// }
 
-@for $i from 30 through 90{
-    .cols#{$i}{
-        width: 100% / 120 * $i;
-        @include mdevice(mobile){
-            width: 100%;
-        }
-        @include mdevice(desktop){
-            float: left;
-        }
-        @include mpadding;
-    }
-}
+// @for $i from 30 through 90{
+//     .cols#{$i}{
+//         width: 100% / 120 * $i;
+//         @include mdevice(mobile){
+//             width: 100%;
+//         }
+//         @include mdevice(desktop){
+//             float: left;
+//         }
+//         @include mpadding;
+//     }
+// }
