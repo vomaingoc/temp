@@ -1,91 +1,92 @@
 .p-header {
-    background-image: url("../images/header-bg.jpg");
-    background-size: 100% auto;
-    padding: 2em 0;
-    @include mdevice(mobile){
-        padding: 0;
-        background-image: none;
-        border-bottom: 1px solid #ddd;
-    }
+  background-image: url("../images/header-bg.jpg");
+  background-size: 100% auto;
+  padding: 2em 0;
+  @include mdevice(mobile) {
+    padding: 0;
+    background-image: none;
+    border-bottom: 1px solid #ddd;
+  }
 
-    .navbar {
-        border-radius: 0;
-        position: relative;
-        min-height: 50px;
-        margin-bottom: 0;
-        border: 0;
-        background-color: transparent;
-    }
- .navbar-toggle{
-     border: none;
-     background: none !important
- }
-    .navbar-brand {
-        height: auto;
-        padding: 0;
-
-        @include mdevice(mobile){
-             img{
-                 height: 55px;
-             }
-        }
-    }
-
-    .navbar-nav {
-        padding-top: 2.3em;
-        padding-left: 4em;
-        @include mdevice(mobile){
-            padding: 0;
-        }
-    }
-
-    .nav > li > a {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.3em;
-        text-align: right;
-
-        @include mdevice(mobile){
-            color: #fff;
-            padding-right: 2em;
-        }
-    }
-
-    .navbar .navbar-nav > .active > a,
-    .navbar .navbar-nav > .active > a:focus,
-    .navbar .navbar-nav > .active > a:hover {
-        background-color: transparent;
-        color: $site-color-1;
-    }
-
-    .navbar-default .navbar-nav > .open > a,
-    .navbar-default .navbar-nav > .open > a:focus,
-    .navbar-default .navbar-nav > .open > a:hover {
-        background-color: transparent;
-    }
-}
-.navbar-header{
+  .navbar {
+    border-radius: 0;
     position: relative;
-}
-#navbar{
-    @include mdevice(mobile){
-         transition:all  .3s;
-        background-color: rgba(0,0,0,.8);
-        position: absolute;
-        top: 100%;
-        right: 0;
-        //display: block;
-        z-index: 999;
-         width: 70%;
-         margin-right: 0;
-         margin-left: 0;
-        height: calc(100vh - 50px) !important;
-opacity: 0;
-left: 100%;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 0;
+    background-color: transparent;
+  }
 
+  .navbar-toggle {
+    border: none;
+    background: none !important;
+  }
+
+  .navbar-brand {
+    height: auto;
+    padding: 0;
+    @include mdevice(mobile) {
+      img {
+        height: 55px;
+      }
     }
-    &.collapse.in{
-        opacity: 1;
-        left: 30%;
+  }
+
+  .navbar-nav {
+    padding-top: 2.3em;
+    padding-left: 4em;
+    @include mdevice(mobile) {
+      padding: 0;
     }
+  }
+
+  .nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3em;
+    text-align: right;
+    @include mdevice(mobile) {
+      color: #fff;
+      padding-right: 2em;
+    }
+  }
+
+  .navbar .navbar-nav > .active > a,
+  .navbar .navbar-nav > .active > a:focus,
+  .navbar .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: $site-color-1;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+  }
+}
+
+.navbar-header {
+  position: relative;
+}
+
+#navbar {
+  @include mdevice(mobile) {
+    transition: all 0.1s;
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+    width: 70%;
+    margin-right: 0;
+    margin-left: 0;
+    height: calc(100vh - 50px) !important;
+    opacity: 0;
+    left: 100%;
+  }
+
+  &.collapse.in {
+    opacity: 1;
+    left: 30%;
+  }
 }

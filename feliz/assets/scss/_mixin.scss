@@ -59,6 +59,11 @@
 }
 
 @mixin mscreen($point) {
+  @if $point==xxl {
+      @media (min-width: $xxl) {
+          @content;
+      }
+  }
     @if $point==xl {
         @media (min-width: $xl) {
             @content;
