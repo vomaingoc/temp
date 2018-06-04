@@ -7,11 +7,11 @@
     background-image: none;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
-
-      position: fixed;
-      width: 100%;
-      z-index: 9;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
   }
+
   .navbar {
     border-radius: 0;
     position: relative;
@@ -20,8 +20,6 @@
     border: 0;
     background-color: transparent;
     position: relative;
-
-
   }
 
   .navbar-toggle {
@@ -32,8 +30,9 @@
   .navbar-brand {
     height: auto;
     padding: 0;
-    img{
-        height: 116px;
+
+    img {
+      height: 116px;
     }
     @include mdevice(mobile) {
       img {
@@ -75,11 +74,10 @@
   }
 }
 
-
-.p-content{
-    @include mdevice(mobile) {
-        padding-top: 55px;
-    }
+.p-content {
+  @include mdevice(mobile) {
+    padding-top: 55px;
+  }
 }
 
 #navbar {
@@ -105,27 +103,50 @@
   }
 }
 
-.navbar-brand img{
+.navbar-brand img {}
 
-}
 .sticky {
   width: 100%;
   z-index: 9;
-.navbar-brand img, .nav.navbar-nav{
-  transition: all 0.3s;
-}
-  li.active{
-    a{
-      color: $site-color-1
+
+  .nav.navbar-nav,
+  .navbar-brand img {
+    transition: all 0.3s;
+  }
+
+  li.active {
+    a {
+      color: $site-color-1;
     }
   }
-  &.is-sticky{
+
+  &.is-sticky {
     background-color: rgba(255,255,255,0.96);
-    .navbar-brand img{
+
+    .navbar-brand img {
       height: 60px;
     }
-    .nav.navbar-nav{
+
+    .nav.navbar-nav {
       padding-top: 0.5em;
+    }
+  }
+}
+
+.isMobile {
+  .p-header {
+    .navbar-header,
+    .navbar-nav {
+      float: none;
+    }
+
+    .navbar-nav > li {
+      float: none;
+    }
+
+    .navbar-toggle {
+      display: block;
+      margin-right: 0;
     }
   }
 }

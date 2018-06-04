@@ -28,26 +28,33 @@ function getdevice() {
 
     }
 
-    //browser
-    var ua = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
-    var browser = '';
-    if (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/Trident.*rv[ :]*11\./i)) {
-        browser = "msie";
+    if(md.isSafari()){
+        myhtml[0].classList.add("safari");
     }
-    else {
-        browser = ua[1].toLowerCase();
-        if (browser === 'safari')
-        {
-            //$('html').addClass('safari');
-            myhtml[0].classList.add("safari");
-        }
+    else{
+        myhtml[0].classList.remove("safari");
+    }
 
-        else{
-            //$('html').removeClass('safari');
-            myhtml[0].classList.remove("safari");
-        }
-    }
+    //browser
+    // var ua = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+    // var browser = '';
+    // if (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/Trident.*rv[ :]*11\./i)) {
+    //     browser = "msie";
+    // }
+    // else {
+    //     browser = ua[1].toLowerCase();
+    //     if (browser === 'safari')
+    //     {
+    //         //$('html').addClass('safari');
+    //         myhtml[0].classList.add("safari");
+    //     }
+    //
+    //     else{
+    //         //$('html').removeClass('safari');
+    //         myhtml[0].classList.remove("safari");
+    //     }
+    // }
 }
 
 document.addEventListener("DOMContentLoaded", getdevice);
-window.addEventListener("resize", getdevice); 
+window.addEventListener("resize", getdevice);

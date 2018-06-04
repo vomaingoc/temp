@@ -1,5 +1,5 @@
 // fixed-top-animated-menu.1.0.js
-var spacetop = 55;
+var spacetop = 45;
 $(document).on('click', 'ul.scrollspy a', function (event) {
     "use strict";
     event.preventDefault();

@@ -222,3 +222,16 @@
 //         @include mpadding;
 //     }
 // }
+
+.isMobile{
+  @for $i from 1 through 11{
+      .col-md-#{$i}{
+         width: 100%;
+      }
+
+      .col-xs-#{$i}{
+        width: $i / 12 * 100%;
+      }
+  }
+
+}
