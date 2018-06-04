@@ -1,8 +1,9 @@
 function getdevice() {
+    var htmlWidth = document.getElementsByTagName("html")[0].offsetWidth;
     var md = new MobileDetect(window.navigator.userAgent);
     var myhtml = document.getElementsByTagName("html");
     //Desktop
-    if (md.phone() === null && md.tablet() === null) {
+    if (md.phone() === null && md.tablet() === null && htmlWidth > 1025) {
         //$('html').addClass('desktop').removeClass('mobile').removeClass('tablet').removeClass('phone');
         myhtml[0].classList.add("isDesktop");
         myhtml[0].classList.remove("isMobile");
@@ -27,33 +28,25 @@ function getdevice() {
         }
 
     }
-
-    if(md.isSafari()){
-        myhtml[0].classList.add("safari");
+      //browser
+    var ua = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+    var browser = '';
+    if (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/Trident.*rv[ :]*11\./i)) {
+        browser = "msie";
     }
-    else{
-        myhtml[0].classList.remove("safari");
-    }
+    else {
+        browser = ua[1].toLowerCase();
+        if (browser === 'safari')
+        {
+            //$('html').addClass('safari');
+            myhtml[0].classList.add("safari");
+        }
 
-    //browser
-    // var ua = navigator.userAgent.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
-    // var browser = '';
-    // if (navigator.userAgent.match(/Edge/i) || navigator.userAgent.match(/Trident.*rv[ :]*11\./i)) {
-    //     browser = "msie";
-    // }
-    // else {
-    //     browser = ua[1].toLowerCase();
-    //     if (browser === 'safari')
-    //     {
-    //         //$('html').addClass('safari');
-    //         myhtml[0].classList.add("safari");
-    //     }
-    //
-    //     else{
-    //         //$('html').removeClass('safari');
-    //         myhtml[0].classList.remove("safari");
-    //     }
-    // }
+        else{
+            //$('html').removeClass('safari');
+            myhtml[0].classList.remove("safari");
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", getdevice);
