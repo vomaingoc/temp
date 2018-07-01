@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Trường dạy lái xe Thành Công</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap3/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/plugins/owl.carousel/owl.carousel.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css?id=0">
+    <link rel="stylesheet" href="assets/plugins/css/animate.min.css">
+</head>
+
+<body ng-app="myApp">
+    <div id="wrapper" ng-controller="mainController">
+        <div class="p-header" id="home">
+                <nav class="navbar navbar-default" ng-controller="menuController">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="openmenu">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Trang chủ</a></li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Đào tạo <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/giay-phep-lai-xe-hang-a1">Giấy phép lái xe máy Hạng A1</a></li>
+                                        <li><a href="/giay-phep-lai-xe-hang-a2">Giấy phép lái xe mô tô Hạng A2</a></li>
+                                        <li><a href="/giay-phep-lai-xe-hang-b2">Giấy phép lái xe ô tô Hạng B2</a></li>
+                                        <li><a href="/giay-phep-lai-xe-hang-c">Giấy phép lái xe ô tô tải Hạng C</a></li>
+                                        <li><a href="/huong-dan-thu-tuc-thi-gplx-hang-d-e">Nâng dấu bằng lái xe tải Hạng D E F</a></li>
+                                        <li><a href="/bang-lai-xe-so-tu-dong-35">Bằng lái xe số tự động B11</a></li>
+                                        <li><a href="/bo-tuc-tay-lai-36">Bổ túc tay lái</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">Học phí</a></li>
+
+                                <li><a href="#">Lịch thi</a></li>
+                                <li><a href="#">Dạy bổ túc lái</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tin tức<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/news-thi-truong-2">Thị trường</a></li>
+                                        <li><a href="/news-van-de-gplx-26">Vấn đề GPLX</a></li>
+                                        <li><a href="/news-an-toan-giao-thong-30">An toàn giao thông</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kinh nghiệm<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/news-xe-2-banh-34">Xe 2 bánh</a></li>
+                                        <li><a href="/news-xe-4-banh-35">Xe 4 bánh</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </div>
+        <div class="p-slider">
+            <div class="slider">
+                <div class="items"><img src="assets/images/banner01.jpg"></div>
+                <div class="items"><img src="assets/images/banner02.jpg"></div>
+                <div class="items"><img src="assets/images/banner03.jpeg"></div>
+            </div>
+        </div>
+        <div class="p-content">
+            <div class="section-1">
+                <div class="container">
+                    <div class="section-inner">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#">
+                                <div class="item">
+                                    <div class="item__img"><img src="assets/images/correct.png" alt=""></div>
+                                    <h2 class="item__title">Bằng lái xe máy</h2>
+                                    <div class="item__desc">Là một trong những trung tâm đào tạo lái xe ôtô uy tín chất lượng và chuyên nghiệp tại TPHCM.</div>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                <div class="item">
+                                    <div class="item__img"><img src="assets/images/guarantee.png" alt=""></div>
+                                    <h2 class="item__title">Bằng lái ô tô</h2>
+                                    <div class="item__desc">Cam kết đào tạo học viên vững tay lái, kỹ năng lái xe và nắm vững luật khi tham gia giao thông.</div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#">
+                                <div class="item">
+                                    <div class="item__img"><img src="assets/images/hand-shake.png" alt=""></div>
+                                    <h2 class="item__title">Bằng lái xe tải</h2>
+                                    <div class="item__desc">Đội ngũ giảng viên giảng dạy tận tình nhằm giúp học viên nắm vững mọi kiến thức và kỹ năng</div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <div class="container">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="img-intro">
+                                    <img src="assets/images/img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="section-2__txt1">
+                                    <h2 class="section__title_2">Về Thành Công</h2>
+                                    <div class="desc txt_md">
+                                        Trung tâm đào tạo và sát hạch lái xe THÀNH CÔNG chúng tôi xin gửi lời chào và cảm ơn tới quý khách. Thành Công là một trong những trung tâm đào tạo lái xe ôtô uy tín chất lượng và chuyên nghiệp tại TPHCM, với đội ngũ nhân viên chuyên nghiệp và giáo viên
+                                        nhiều năm kinh nghiệm, dạy nhiệt tình và chăm sóc kỹ lưỡng do đó tỉ lệ đậu rất cao những học viên thi rớt sẽ được sắp xếp và thi lại miễn phí.
+                                    </div>
+                                    <p class="grbtn">
+                                        <a href="" class="button">Chi tiết</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-4 anchor" id="dangkythi">
+                <div class="section-inner">
+                    <div class="section__title ">
+                        Đăng ký học lái xe <br> tại Trường dạy lái xe Thành Công
+                    </div>
+                    <div class="container">
+                        <div class="form-dk">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input class="input" type="text" name="" value="" placeholder="Họ tên">
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="input" type="text" name="" value="" placeholder="Điện thoại">
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="input" type="text" name="" value="" placeholder="Địa chỉ">
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="input" name="">
+                                    <option value="">Chọn khóa học</option>
+                                </select>
+                                </div>
+                            </div>
+                            <p class="grbtn">
+                                <a href="" class="button">Đăng ký</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="section__title">
+                    Featured Courses
+                </div>
+                <div class="section__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt labore dolore magna aliqua Ut enim ad minim veniam.
+                </div>
+                <div class="container">
+                    <div class="row list01">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="http://blog.aisinsurance.com/wp-content/themes/responsive-child/images/auto.jpg" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="https://ia.media-imdb.com/images/M/MV5BMTI4NzcwODYyMl5BMl5BanBnXkFtZTcwMDkyODE2Mg@@._V1_.jpg" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="https://s-media-cache-ak0.pinimg.com/originals/2a/74/f9/2a74f9c53a1b46f2accedfac269f9228.jpg" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="item__img">
+                                    <img src="http://via.placeholder.com/600x400" alt="">
+                                </div>
+                                <div class="item__txt">
+                                    <h2 class="item__title">
+                                        Become A PHP Master And Make Money Fast
+                                    </h2>
+
+                                    <div class="item__desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                                    </div>
+                                    <div class="item__link">
+                                        <a href="">Chi tiết</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-5">
+                <div class="section__title">
+                    Lịch thi
+                </div>
+                <div class="section__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt labore dolore magna aliqua Ut enim ad minim veniam.
+                </div>
+                <div class="container">
+                    <div class="list02">
+                        <div class="item">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item__img">
+                                            <img src="https://apps.indianmoney.com/wealthDoctor/uploads/imc-wda-17-06-09-10-36-31.png" alt="">
+                                            <div class="item__txt2">
+                                                <span class="date">30</span>
+                                                <span class="month">
+                                            tháng Năm
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="item__txt">
+                                            <h2 class="item__title">Lịch thi bằng lái hạng A1 tháng 06/2018 đợt 1</h2>
+                                            <div class="item__desc">
+                                                Trường dạy lái xe Thành Công Phú Mỹ Hưng
+                                            </div>
+                                            <line></line>
+                                            <div class="item__desc_2">
+                                                Thi sát hạch: 7h30 ngày 03/06/2018 <br>Nhận hồ sơ: đến hết ngày 23/05/2018
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item__img">
+                                            <img src="http://www.localfiles.com/production/usergraphics/47/main_Photo_247547.jpg" alt="">
+                                            <div class="item__txt2">
+                                                <span class="date">30</span>
+                                                <span class="month">
+                                            tháng Năm
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="item__txt">
+                                            <h2 class="item__title">Lịch thi bằng lái hạng A1 tháng 06/2018 đợt 1</h2>
+                                            <div class="item__desc">
+                                                Trường dạy lái xe Thành Công Phú Mỹ Hưng
+                                            </div>
+                                            <line></line>
+                                            <div class="item__desc_2">
+                                                Thi sát hạch: 7h30 ngày 03/06/2018 <br>Nhận hồ sơ: đến hết ngày 23/05/2018
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item__img">
+                                            <img src="https://techcrunch.com/wp-content/uploads/2017/01/ff_91_exterior_1_5a0097f5-860d-404e-ba2f-fd5cc318765d.jpg?w=600" alt="">
+                                            <div class="item__txt2">
+                                                <span class="date">30</span>
+                                                <span class="month">
+                                            tháng Năm
+                                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <div class="item__txt">
+                                            <h2 class="item__title">Lịch thi bằng lái hạng A1 tháng 06/2018 đợt 1</h2>
+                                            <div class="item__desc">
+                                                Trường dạy lái xe Thành Công Phú Mỹ Hưng
+                                            </div>
+                                            <line></line>
+                                            <div class="item__desc_2">
+                                                Thi sát hạch: 7h30 ngày 03/06/2018 <br>Nhận hồ sơ: đến hết ngày 23/05/2018
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-6">
+                <div class="section-inner">
+                    <div class="section__title ">
+                        Đăng ký học lái xe <br> tại Trường dạy lái xe Thành Công
+                    </div>
+                    <div class="container tac"> <a href="" class="button">Đăng ký</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-footer" id="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row row2">
+                            <div class="col col-md-4 col-xs-6">
+                                <h2 class="h2">CHUYÊN MỤC</h2>
+                                <div class="links">
+                                    <p><a href="">Âm nhạc</a></p>
+                                    <p><a href="">Công nghệ thông tin</a></p>
+                                    <p><a href="">Marketing</a></p>
+                                    <p><a href="">Ngoại ngữ</a></p>
+                                    <p><a href="">Nhiếp ảnh</a></p>
+                                    <p><a href="">Khởi nghiệp</a></p>
+                                </div>
+                            </div>
+                            <div class="col col-md-4 col-xs-6">
+                                <h2 class="h2">Khóa học</h2>
+                                <div class="links">
+                                    <p><a href="">Giới thiệu</a></p>
+                                    <p><a href="">Liên hệ</a></p>
+                                    <p><a href="">Tuyển dụng</a></p>
+                                    <p><a href="">Điều khoản</a></p>
+                                    <p><a href="">Chính sách bảo mật</a></p>
+                                    <p><a href="">Quy chế hoạt động</a></p>
+                                </div>
+                            </div>
+                            <div class="col col-md-4 col-xs-6">
+                                <h2 class="h2">CỘNG ĐỒNG</h2>
+                                <div class="links">
+                                    <p><a href="">Hợp tác giảng dạy</a></p>
+                                    <p><a href="">Blog</a></p>
+                                    <p><a href="">Hỗ trợ</a></p>
+                                    <p><a href="">Câu hỏi thường gặp</a></p>
+                                    <p><a href="">Báo chí nói về Edutalk.vn</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <h2 class="h2"> Liên hệ</h2>
+                        <div class="address">
+                            <p><img src="assets/images/icon-map.png" alt="">78/8 (Hẻm 60) Lâm Văn Bền <br>
+                                <img src="assets/images/icon-map.png" alt="" style="opacity: 0" class="hide-mobile">Tân Kiểng, Quận 7, TpHCM</p>
+                            <p><img src="assets/images/icon-map.png" alt="">E002 - KP Mỹ Phước, Nguyễn Văn Linh <br>
+                                <img src="assets/images/icon-map.png" alt="" style="opacity: 0" class="hide-mobile">Tân Phong, Quận 7, TpHCM </p>
+                            <p><img src="assets/images/icon-phone.png" alt=""><a href="tel:0822131524">0822131524</a> - <a href="0854120476">0854120476</a></p>
+                            <p><img src="assets/images/icon-phone-2.png" alt=""><a href="tel:0903013344 ">0903013344 </a> </p>
+                            <p><img src="assets/images/icon-mail.png" alt=""><a href="mailto:thanh.pham@feliz-vn.com">trungtamthanhconghcm@gmail.com</a></p>
+                        </div>
+                        <div class="copyright only-show-mobile">
+                            Copyright © 2018 Feliz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hagtag">
+                <div class="container">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="https://www.edutalk.vn/">Học gì cũng có</a></li>
+                            <li><a href="https://www.edutalk.vn/tieng-anh.html">Hoc tieng Anh</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/edutalk-la-gi-tim-hieu-nhieu-hon-ve-edutalk-vn/">Edutalk là gì?</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/co-hoi-nghe-nghiep/">Edutalk tuyển dụng</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/tag/hoc-tieng-anh-online/">Học tiếng Anh trực tuyến</a></li>
+                            <li><a href="https://www.edutalk.vn/ngoai-ngu.html">Học ngoại ngữ</a></li>
+                            <li><a href="https://www.edutalk.vn/thiet-ke.html">Học thiết kế</a></li>
+                            <li><a href="https://www.edutalk.vn/" target="_blank">Wifi Marketing</a></li>
+                            <li><a href="https://www.edutalk.vn/marketing.html">Học Marketing</a>
+                            </li>
+                            <li><a href="https://www.edutalk.vn/shop/flashcard/">Mua Flashcard</a></li>
+                            <li><a href="https://www.edutalk.vn" target="_blank">Giải pháp Wifi Marketing</a></li>
+                            <li><a href="https://www.edutalk.vn/shop/flashcard/flashcard-tieng-anh">Flashcard tiếng Anh</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/7-bi-quyet-phat-am-tieng-anh-chuan-nhu-nguoi-ban-xu/">Học phát âm tiếng Anh</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/hoc-tieng-anh-1-kem-1-qua-skype/">Học tiếng Anh 1 kèm 1</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/bi-kip-de-hoc-tieng-anh-hieu-qua-qua-phim/">Học tiếng Anh qua phim</a></li>
+                            <li><a href="https://www.tranbadat.com/2018/01/10-ung-dung-hoc-tieng-anh-tot-nhat-cho-dien-thoai-2018.html">Ứng dụng học tiếng Anh</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/hoc-tieng-anh-giao-tiep-cho-nguoi-di-lam/">Học tiếng Anh giao tiếp cho người đi làm</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/phuong-phap-hoc-tieng-anh-hieu-qua/">Phương pháp học tiếng anh hiệu quả</a></li>
+                            <li><a href="https://www.edutalk.vn/blog/bi-kip-de-hoc-tieng-anh-hieu-qua-qua-phim/">Học tiếng anh qua phim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p>© 2016. Bản quyền của Trung Tâm Thành Công.</p>
+                            <p>Giấy chứng nhận Đăng ký Kinh doanh số 03141233338 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 21/11/2016.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><img src="https://www.edutalk.vn/v2/images/bo-cong-thuong.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/plugins/js/mobile-detect.min.js"></script>
+        <script src="assets/plugins/js/responsive.js?id=0"></script>
+
+        <!-- jQuery library -->
+        <script src="assets/plugins/js/jquery.min.js"></script>
+        <!-- <script src="../assets/plugins/js/jquery-ui.min.js"></script> -->
+        <!-- Latest compiled JavaScript -->
+        <script src="assets/plugins/bootstrap3/bootstrap.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+        <!-- <script src="assets/plugins/owl.carousel/owl.carousel.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script src="assets/plugins/js/wow.min.js"></script>
+        <script src="assets/js/main.js?id=0"></script>
+</body>
+
+</html>

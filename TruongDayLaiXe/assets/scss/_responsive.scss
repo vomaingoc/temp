@@ -1,0 +1,22 @@
+.container{
+    @include mscreen(lg){
+        padding: 0;
+    }
+}
+
+body{
+    @include mdevice(mobile){
+        overflow-x: hidden;
+    }
+}
+.hide-mobile{
+    @include mdevice(mobile){
+        display: none;
+    }
+}
+
+.only-show-mobile{
+    @include mdevice(desktop){
+        display: none;
+    }
+}

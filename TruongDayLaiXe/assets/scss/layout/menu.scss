@@ -1,0 +1,230 @@
+.p-header {
+  background-size: 100% auto;
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,.4) ;
+  padding: 0em 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  position: relative;
+  z-index: 4;
+  @include mdevice(mobile) {
+    padding: 0;
+    background-image: none;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    //position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+  }
+
+  .navbar {
+    border-radius: 0;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .navbar-toggle {
+    border: none;
+    background: none !important;
+  }
+
+  .navbar-brand {
+    height: auto;
+    padding: 0;
+
+    img {
+      height:60px;
+    }
+    @include mdevice(mobile) {
+      img {
+        height: 52px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .navbar-nav {
+     padding-top: 0.3em;
+    //padding-left: 4em;
+    @include mdevice(mobile) {
+      padding: 0;
+    }
+    float: right;
+  }
+
+  .nav > li {
+       > a {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 1.2em;
+        text-align: right;
+        position: relative;
+        &:before{
+            content: '';
+            width: 0;
+            bottom: 0;
+            position: absolute;
+            left: 50%;
+            transition: all 0.3s;
+            border-bottom: 2px solid $site-color-1;
+        }
+        &:hover{
+            color: $site-color-1 !important;
+        }
+@include mdevice(desktop){
+    &:hover{
+        color: $site-color-1;
+        &:before{
+            content: '';
+            width: calc(100% - 28px) ;
+            left: 14px;
+
+        }
+    }
+}
+
+        @include mdevice(mobile) {
+          color: #fff;
+          padding-right: 2em;
+
+
+        }
+      }
+@include mdevice(desktop){
+    &.open{
+        >a{
+            color: $site-color-1;
+            &:before{
+                content: '';
+                width: calc(100% - 28px) ;
+                left: 14px;
+
+            }
+        }
+    }
+}
+
+  }
+
+  .navbar .navbar-nav > .active > a,
+  .navbar .navbar-nav > .active > a:focus,
+  .navbar .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: $site-color-1;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+  }
+}
+.isDesktop .navbar-nav>li>.dropdown-menu{
+    padding-top: 0;
+    padding-bottom: 0;
+    >li > a{
+        transition: background 0.2s;
+        padding-top: 0.6em;
+        padding-bottom: 0.7em;
+        &:hover{
+            color: #fff;
+            background-color: $site-color-1;
+        }
+
+
+    }
+}
+ .navbar-nav>li>.dropdown-menu{
+    >li > a{
+        @include mdevice(mobile){
+            color: #fff ;
+        }
+    }
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    @include mdevice(mobile){
+        color: #fff ;
+        text-align: right;
+        padding-right: 3.5em;
+        font-size: 0.8em;
+    }
+}
+
+#navbar {
+  @include mdevice(mobile) {
+    transition: all 0.1s;
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+    width: 70%;
+    margin-right: 0;
+    margin-left: 0;
+    height: calc(100vh - 50px) !important;
+    opacity: 0;
+    left: 100%;
+    // display: block !important;
+  }
+
+  &.collapse.in {
+    opacity: 1;
+    left: 30%;
+  }
+}
+
+.navbar-brand img {}
+
+.sticky {
+  width: 100%;
+  z-index: 9;
+
+  .nav.navbar-nav,
+  .navbar-brand img {
+    transition: all 0.3s;
+  }
+
+  li.active {
+    a {
+      color: $site-color-1;
+    }
+  }
+
+  &.is-sticky {
+    background-color: rgba(255,255,255,0.96);
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0,.4) ;
+
+    .navbar-brand img {
+      height: 54px;
+    }
+
+    .nav.navbar-nav {
+      padding-top: 0.5em;
+    }
+  }
+}
+
+.isMobile {
+  .p-header {
+    .navbar-header,
+    .navbar-nav {
+      float: none;
+    }
+
+    .navbar-nav > li {
+      float: none;
+    }
+
+    .navbar-toggle {
+      display: block;
+      margin-right: 0;
+    }
+  }
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin-left: 0;
+}
