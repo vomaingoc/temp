@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+body{
+  font-family: 'Roboto', sans-serif;
+}
 @mixin linebt {
   position: relative;
 
@@ -380,6 +384,9 @@ img {
 
     .list-project {
         padding-bottom: 7vw;
+        @include mdevice(desktop){
+          margin: 0 20%;
+        }
       .item {
         text-align: center;
         @include mdevice(mobile) {
@@ -456,10 +463,9 @@ img {
     }
 
     .txt {
-      padding-left: 2%;
 
       .h2 {
-        font-size: 2.1em;
+        font-size: 2em;
         font-weight: normal;
         margin-bottom: 1em;
       }
@@ -613,7 +619,7 @@ img {
   }
 }
 
- .icon-bar{
+ .blockp .icon-bar{
      @include mdevice(mobile){
          &:nth-child(2) {
            transform: rotate(45deg);
@@ -661,4 +667,25 @@ body.blockp {
       opacity: 0;
     }
   }
+}
+
+
+.td-img-bottom img {
+  vertical-align: top !important;
+  margin-right: 2%;
+  max-width: 46%;
+}
+
+.td001 {
+  padding-right: 8px;
+}
+
+.td002,
+.td003 {
+  padding-left: 8px;
+
+}
+
+.td002 {
+  padding-left: 32px;
 }
