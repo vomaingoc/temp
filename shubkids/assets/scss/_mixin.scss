@@ -58,7 +58,12 @@
 
 }
 
-@mixin mscreen($point) {
+@mixin mscreen($point){
+    @if $point==xxxl {
+        @media (min-width: $xxxl) {
+            @content;
+        }
+    }
   @if $point==xxl {
       @media (min-width: $xxl) {
           @content;
@@ -95,6 +100,10 @@
     }
 }
 
+@mixin shadowbtn{
+    -webkit-box-shadow: 2px 1px 4px 0 rgba(0,0,0,.2);
+box-shadow: 2px 1px 4px 0 rgba(0,0,0,.2);
+}
 // @mixin mpadding {
 //     @include mscreen(lg) {
 //         padding-left: $plg;
@@ -222,7 +231,7 @@
 //         @include mpadding;
 //     }
 // }
-// 
+//
 // .isMobile{
 //   @for $i from 1 through 11{
 //       .col-md-#{$i}{
