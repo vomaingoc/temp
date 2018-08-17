@@ -1,0 +1,347 @@
+.page_news {
+  padding-top: 6rem;
+  background-image: url(../images/news_bottom_bg.png), url(../images/news_bg.png), url("../images/news_bg_1.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center bottom, top center, center,;
+  background-size: auto, auto, cover;
+
+  .row_01 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    @include mdevice(mobile) {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      line-height: 0;
+      margin: 0;
+    }
+  }
+
+  .btn_more {
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    transition: all 0.2s;
+    background-image: linear-gradient(#CCEFFD, #91CFF1);
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  .col_select_news {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    @include mdevice(mobile) {
+      margin-top: 1rem;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+    .item_select {
+      position: relative;
+
+      .icon_drop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        background-image: url("../images/icon_dropdown.png");
+        background-size: 100%;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        z-index: 4;
+        pointer-events: none;
+      }
+    }
+
+    .select_news {
+      margin-bottom: 2em;
+      width: 100%;
+      background: none;
+      border: none;
+      border-bottom: 2px solid #5F5D5E;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $site-color-3;
+      position: relative;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.page_hoatdong {
+  .section_1 {
+    padding-top: 8em;
+    padding-bottom: 0rem;
+    background-image:url("../images/hoatdong/section_1_bg_3.png"), linear-gradient(#C2E7F8, #fff);
+    background-size: 50% auto, auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    font-size: 1.4rem;
+    .container{
+
+    }
+    .cols2{
+      .title{
+        margin: 0;
+        padding: 0;
+        img{
+           max-width: 90%
+        }
+      }
+
+      .txt1{
+        background-color: #E9E5E3;
+        width: 400px;
+        max-width: 100%;
+        margin-top: 2em;
+        padding-bottom: 1em;
+
+
+
+        &__inner{
+          padding: 1.5em;
+          font-weight: 500;
+        }
+      }
+
+      .btngr {
+        .my_btn {
+          &-1 {
+            background-color: $site-color-3;
+            color: $site-color-2;
+          }
+        }
+      }
+
+    }
+  }
+
+  .section_2{
+    background-image: url("../images/hoatdong/section_2_bg.png");
+    background-size: cover;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 1.4rem;
+     .img_right{
+       padding-top: 1em;
+       padding-bottom: 1em;
+       img{
+         max-width: 100%;
+       }
+     }
+
+     .box_txt1{
+       text-align: right;
+
+       &__inner{
+         text-align: right;
+         display: inline-block;
+       }
+       .btngr {
+         text-align: left;
+         .my_btn {
+           &-1 {
+             background-color: $site-color-2;
+             color: $site-color-3;
+           }
+         }
+       }
+
+       .txt1{
+         background-color: $site-color-3;
+         width: 400px;
+         max-width: 100%;
+         margin-top: 2em;
+         padding-bottom: 1em;
+
+         &__inner{
+           padding: 1.5em;
+           font-weight: 500;
+           text-align: justify;
+           color: #fff;
+
+         }
+       }
+       .title{
+         text-align: center;
+         margin-top: 6em;
+         img{
+           max-width: 90%;
+         }
+       }
+     }
+  }
+
+  .section_4{
+    position: relative;
+    font-size: 1.4rem;
+
+    img{
+      max-width: 100%;
+    }
+    .txt{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+
+      .title{
+        padding: 0;
+        margin: 0;
+      }
+
+      .txt_desc{
+        font-size: 1.1em;
+        margin-top: 2em;
+        font-weight: 500;
+        text-align: justify;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+      }
+    }
+
+  }
+  .section_5{
+    background-image: url("../images/hoatdong/section_5_bg.png");
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 4em;
+    padding-bottom: 10em;
+    font-size: 1.4rem;
+
+    img{
+      max-width: 100%;
+    }
+    .cols1{
+      a{
+        text-decoration: none;
+        outline: none;
+        img{
+          transition: all 0.3s;
+          &:hover{
+            opacity: .9;
+
+          }
+        }
+      }
+    }
+    .cols2{
+      margin-top: 4em;
+    }
+
+    .arrow_top{
+      position: absolute;
+      top: 0;
+      width: 80%;
+      left: 0;
+    }
+
+    .list_item{
+      margin-top: 5em;
+      .item{
+        width: 174px;
+        height: 194px;
+        background-image: url(../images/circle_blue.png);
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 1.3em;
+        padding-bottom: 10px;
+        transition: all 0.2s;
+        &:hover{
+          opacity: .9;
+        }
+        a{
+          text-decoration: none;
+        }
+        span{
+          position: relative;
+          text-align: center;
+          display: block;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .section_3{
+    background-image: url("../images/hoatdong/section_3_bg.jpg");
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 8em;
+    padding-bottom: 0em;
+    font-size: 1.4rem;
+    .title{
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      margin-top: 3em;
+    }
+    .btngr {
+      text-align: right;
+      .my_btn {
+        &-1 {
+          background-color: $site-color-2;
+          color: $site-color-3;
+        }
+
+        &-2 {
+
+        }
+      }
+    }
+    .cols2{
+      img{
+        width: 100%;
+      }
+
+      position: relative;
+      .txt{
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        right: 40%;
+
+        .txt1{
+          font-weight: 500;
+          color: $site-color-3;
+          margin-bottom: 3em;
+          padding-right: 5%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

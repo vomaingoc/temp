@@ -89,6 +89,12 @@
             @content;
         }
     }
+
+    @if $point==desktop_sm {
+        @media (max-width: 1366px) {
+            @content;
+        }
+    }
 }
 
 @mixin shadow($s) {
