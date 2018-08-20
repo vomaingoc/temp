@@ -13,11 +13,13 @@ body {
     max-width: 1100px;
   }
 
-  &.container_s2 {
-    max-width: $maxWidthContent;
+
+}
+@media (max-width:1400px) {
+  .container_s2 {
+    max-width:800px;
   }
 }
-
 .title_page {
   text-align: center;
   margin: 0;
@@ -258,7 +260,7 @@ body {
   }
 
   &_3 {
-    .container_s {
+    .container {
       position: relative;
 
       .link_l_r {
@@ -299,6 +301,10 @@ body {
             position: relative;
             top: -150px;
             right: 20px;
+
+            @include mscreen(desktop_sm){
+              width: 160px;
+            }
           }
         }
 
@@ -311,6 +317,9 @@ body {
             position: relative;
             top: -150px;
             left: 20px;
+            @include mscreen(desktop_sm){
+              width: 360px;
+            }
           }
         }
       }

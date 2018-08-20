@@ -1,5 +1,5 @@
  $(".title_page").addClass("wow fadeInUp");
-  $(" .section_home_2 .item, .slider_b__content .list .item, .page_intro .title, .list_circle .item, .page_intro .section_4 .txt3").addClass("wow fadeInUp");
+  $(" .section_home_2 .item, .slider_b__content .list .item, .page_intro .title, .list_circle .item, .page_intro .section_4 .txt3, h2.title").addClass("wow fadeInUp");
   $(" .logo_footer, .list_news .item ").addClass("wow fadeIn");
   $("  .p-header .nav>li>a span.sp1").addClass("wow fadeIn");
 
@@ -33,13 +33,27 @@ $(document).ready(function () {
      return;
     })
 
+    $('.intro_x').find(".img_x").on('click', function(){
+        $(this).addClass('clicked')
+    })
+
     function hoverintro(x){
         $('.item_hover_intro .x00' + x).on("mouseenter",function(){
             $('.intro_x').find(".img_x-" + x).addClass("active");
+            $(this).addClass('op0');
+            $(this).siblings().addClass('op0');
         })
 
-        $('.item_hover_intro .x00' + x).on("mouseleave",function(){
-            $('.intro_x').find(".img_x-" + x).removeClass("active");
+
+        // $('.item_hover_intro .x00' + x).on("mouseleave",function(){
+        //     $('.intro_x').find(".img_x-" + x).removeClass("active");
+        //     $(this).siblings().removeClass('op0');
+        // })
+
+        $('.intro_x').on("mouseleave",function(){
+            $('.item_hover_intro').find(".dot").removeClass("op0");
+            $('.intro_x').find(".img_x").removeClass("active");
+            $('.intro_x').find(".img_x").removeClass("clicked");
         })
     }
 
