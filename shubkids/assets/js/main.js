@@ -36,24 +36,19 @@ $(document).ready(function () {
     $('.intro_x').find(".img_x").on('click', function(){
         $(this).addClass('clicked')
     })
-
+    $(".img_x .btn_close").on('click', function(){
+         $('.intro_x').mouseleave();
+    })
+    $('.intro_x').on("mouseleave",function(){
+        $('.item_hover_intro').find(".dot").removeClass("op0");
+        $('.intro_x').find(".img_x").removeClass("active");
+        $('.intro_x').find(".img_x").removeClass("clicked");
+    })
     function hoverintro(x){
         $('.item_hover_intro .x00' + x).on("mouseenter",function(){
             $('.intro_x').find(".img_x-" + x).addClass("active");
             $(this).addClass('op0');
             $(this).siblings().addClass('op0');
-        })
-
-
-        // $('.item_hover_intro .x00' + x).on("mouseleave",function(){
-        //     $('.intro_x').find(".img_x-" + x).removeClass("active");
-        //     $(this).siblings().removeClass('op0');
-        // })
-
-        $('.intro_x').on("mouseleave",function(){
-            $('.item_hover_intro').find(".dot").removeClass("op0");
-            $('.intro_x').find(".img_x").removeClass("active");
-            $('.intro_x').find(".img_x").removeClass("clicked");
         })
     }
 
