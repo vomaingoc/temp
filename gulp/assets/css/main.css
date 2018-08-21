@@ -1,0 +1,62 @@
+* {
+  outline: none;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%; }
+
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: auto;
+  font-size: 14px;
+  font-family: arial; }
+
+a {
+  text-decoration: none;
+  outline: 0; }
+
+.p-header .navbar {
+  border-radius: 0;
+  margin: 0; }
+
+.owl-carousel .owl-nav {
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s; }
+  .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin-top: -20px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: auto;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%; }
+  .owl-carousel .owl-nav .owl-prev {
+    left: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVEhLtdQ7akJRFIXha2ETBEkRSJfKGQiSGMXGwsJCJ+BkNEjwUaXMYATBQrAQUosz8Ikogvk3GDhsCAhn+cOHYLG2esEksvT1VV4KPezRsjeU2fgQl6szGpAVjv/pQ9IAfnyEB0Rnv7kfHyOD6D7hxyfIIrou/PgUkvEP+PEZHhFdB358jidE14Yf/4FkvA4/vsQzJOWwQnjghCZkFeCPHGHfTtZ/R2qQ9Qp/5IAqZL1hjfCI/U1XIKuIDfyREmS9Y4vwiB21byjLPvEO4RF7RnnIKsMf+YI0O2LPwMYXeIE8e/DfuMv4jSXJL02WaZRNaaEmAAAAAElFTkSuQmCC); }
+  .owl-carousel .owl-nav .owl-next {
+    right: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADxSURBVEhLtdQ7akJRFEbhq1ELo3E04lshRYo0goWtY7G2sLDRxsJKCwdg55tMJWkSX4ggmLVB4bCxEM52wYdg8W/wXgweKHr9NC+GMX5RkS+sG+FydUAZZoXxjdsBsUcJZmXxB/fIDkWYVYCMuke2MD0iv708A31Ejpv1Dn1kgzzM+sAR7hF5RjmY9YkT9JEMzKri3pE0zKrDPSB+EIF3LxhCH5jAOxkfQI9PEYdXIfShx2cwGe9Bj8/xCq9kvAM9vkAC3rWhx5dIwrsWnjbehB5f4Q3eyeso/5ju+BopmNXAGTL+BdPxWzV08ZRxg4LgH/UwaZ/ZnR8/AAAAAElFTkSuQmCC); }
+
+.owl-carousel:hover .owl-nav {
+  opacity: 1; }
+
+.section--1 {
+  padding: 20px 0; }
