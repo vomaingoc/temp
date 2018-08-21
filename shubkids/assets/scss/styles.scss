@@ -130,8 +130,12 @@ body {
       flex-direction: column;
       @include mdevice(mobile) {
         position: relative;
-        margin-top: 1em;
+        margin-top: 0em;
         margin-bottom: 1em;
+        background-image: url("../images/home/section_1_bg_mobile_2.jpg"),url("../images/home/section_1_bg_mobile_3.jpg") ;
+        background-position: center top, center bottom;
+        background-size: 100% auto,  100% auto;
+        background-repeat: no-repeat, repeat-y;
       }
 
       &__content {

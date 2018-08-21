@@ -215,6 +215,9 @@
     font-size: 1.4rem;
     @include mdevice(mobile) {
       overflow: hidden;
+      padding-bottom: 0;
+      padding-top: 0;
+      background: none;
     }
 
     .img_right {
@@ -231,6 +234,13 @@
 
     .box_txt1 {
       text-align: right;
+      @include mdevice(mobile) {
+        background-image: url("../images/hoatdong/section_2_bg_mobile_2.png");
+        background-size: 100% auto;
+        margin-top: -1px;
+
+
+      }
 
       &__inner {
         text-align: right;
@@ -270,7 +280,7 @@
         text-align: center;
         margin-top: 6em;
         @include mdevice(phone) {
-          margin-top: 1em;
+          margin-top: 0em;
         }
 
         img {
@@ -286,10 +296,7 @@
     @include mdevice(mobile) {
       overflow: hidden;
     }
-    @include mdevice(phone) {
-      background-image: url("../images/hoatdong/section_4_bg.png");
-      background-size: cover;
-    }
+
 
     img {
       max-width: 100%;
@@ -311,7 +318,12 @@
       display: -ms-flex;
       display: flex;
       align-items: center;
-
+      @include mdevice(mobile) {
+        position: relative;
+       background-image: url("../images/hoatdong/section_4_bg_mobile.png");
+        background-size: 100% 100%;
+        padding-top: 2em;
+      }
       .title {
         padding: 0;
         margin: 0;
@@ -383,6 +395,9 @@
     @include mdevice(mobile) {
       overflow: hidden;
       padding-top: 2em;
+        background-size: 100% 100%;
+          background-position: top center;
+            background-image: url("../images/hoatdong/section_3_bg_mobile.png");
     }
 
     .title {
@@ -392,6 +407,7 @@
       margin-top: 3em;
       @include mdevice(mobile) {
         margin-top: 0;
+        text-align: center;
       }
     }
 
