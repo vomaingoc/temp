@@ -694,7 +694,7 @@
             .btn_close{
               padding: 0px;
               padding-top: 10px;
-              padding-left: 10px;
+              padding-left: 0px;
               text-transform: uppercase;
             }
             .btn_more{
@@ -1081,6 +1081,7 @@
 
 #section_2_modal_more{
   margin-top: 0;
+  margin-bottom: 0;
   background-image: url("../images/hoatdong/section_2_modal_bg.png");
   background-size: 100% 100%;
   padding: 0;
@@ -1135,6 +1136,7 @@
 }
 #section_3_modal_more{
   margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   background-image: url("../images/hoatdong/section_3_bg.jpg");
   background-size: 100% 100%;
