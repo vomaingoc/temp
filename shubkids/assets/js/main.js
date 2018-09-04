@@ -11,6 +11,15 @@ $(document).ready(function() {
   // });
   //
   //
+
+   if ($('html').hasClass('isMobile')) {
+      $('.list_1_home_page').owlCarousel({
+          loop:true,
+          margin:0,
+          nav:true,
+          items:1
+      });
+   };
   if ($('html').hasClass('isDesktop')) {
     new WOW().init();
   };
@@ -20,7 +29,7 @@ $(document).ready(function() {
   // });
 
   if ($('.list_news .item')) {
-    $('.isDesktop .list_news .item').matchHeight();
+    $('.list_news .item').matchHeight();
   }
 
   $("#scroll_to_top").on('click', function() {
@@ -60,4 +69,14 @@ $(document).ready(function() {
   hoverintro(4)
   hoverintro(5)
 
+
 });
+
+
+$('#section_1_view_more').on('click', function() {
+    $('.section_1').find('.modal_more').addClass('active');
+})
+
+$('.btn_close_modal').on('click', function() {
+    $('.modal_more').removeClass('active');
+})

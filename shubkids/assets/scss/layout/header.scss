@@ -5,6 +5,14 @@
     top: 12px;
     left: 20px;
     right: 20px;
+    @include mdevice(mobile){
+      top: 0;
+      left: 0px;
+
+      img{
+        max-height: 50px
+      }
+    }
 
   }
   .input_search{

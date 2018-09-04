@@ -3,15 +3,30 @@
 
     }
 }
- 
+
 .hide-mobile{
     @include mdevice(mobile){
-        display: none;
+        display: none !important;
     }
 }
 
 .only-show-mobile{
     @include mdevice(desktop){
-        display: none;
+        display: none  !important;
+    }
+}
+
+.hide-phone{
+    @include mdevice(phone){
+        display: none !important;
+    }
+}
+
+.only-show-phone{
+    @include mdevice(desktop){
+        display: none !important;
+    }
+    @include mdevice(tablet){
+        display: none !important;
     }
 }
