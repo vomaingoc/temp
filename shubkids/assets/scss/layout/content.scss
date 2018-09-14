@@ -168,6 +168,10 @@
       padding-top: 1em;
     }
 
+    #section_1_view_more{
+      margin-bottom: 0.4em;
+    }
+
     .container {
     }
 
@@ -192,7 +196,7 @@
 
       .txt1 {
         background-color: #e9e5e3;
-        width: 400px;
+        width: 430px;
         max-width: 100%;
         margin-top: 2em;
         padding-bottom: 1em;
@@ -320,7 +324,7 @@
 
       .txt1 {
         background-color: $site-color-3;
-        width: 400px;
+        width: 480px;
         max-width: 100%;
         margin-top: 2em;
         padding-bottom: 1em;
@@ -579,7 +583,7 @@
 
     .cols01 {
       &__inner {
-        padding: 3em;
+        padding:1.5em ;
         @include mdevice(mobile) {
           padding: 1em;
         }
@@ -588,10 +592,11 @@
 
     .txt1 {
       color: $site-color-3;
-      font-size: 1.4em;
-      line-height: 1.8;
+      font-size: 1.3em;
+      line-height: 1.7;
       font-weight: 700;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
+      padding-right: 1.7em;
     }
 
     .txt2 {
@@ -946,9 +951,9 @@
     .txt {
       font-weight: 500;
       color: $site-color-3;
-      margin-top: 6em;
+      margin-top: 1em;
       font-size: 1.2em;
-      margin-right: 19%;
+      margin-right: 5%;
       padding-left: 3%;
       text-align: justify;
       position: relative;
@@ -971,7 +976,7 @@
     .txt2 {
       text-align: center;
       //padding-top: 4em;
-      margin-top: -2em;
+      margin-top:  2em;
       font-size: 1.4em;
       color: $site-color-3;
       font-weight: 500;
@@ -1109,11 +1114,12 @@
   .item{
     .txt_desc{
       color: #fff;
-      padding: 10% 0;
+      padding: 2% 0;
+      font-size: 1.3rem;
     }
   .row > * >  img{
       max-width: 100%;
-      height: 200px
+      height: 248px
     }
   }
 

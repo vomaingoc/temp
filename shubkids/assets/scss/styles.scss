@@ -214,8 +214,8 @@ body {
             .list {
               .item {
                 &__txt {
-                  font-size: 1.2rem;
-                  padding: 1em;
+                  font-size: 1.43rem;
+                  padding:1.5em 1.2em;
                 }
 
               }
@@ -680,5 +680,16 @@ body {
         top: 0;
       }
     }
+  }
+}
+
+
+.modal_event_home{
+  background-color: $site-color-7 !important;
+
+  &__inner{
+    color: #000000;
+    font-size: 1.3em;
+    padding: 1em;
   }
 }

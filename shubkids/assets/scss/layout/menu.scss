@@ -126,6 +126,7 @@
         border-right: 2px solid $site-color-3;
         padding-right: 5px;
         line-height: 0.8;
+        transition: all 0.3s;
         @include mdevice(mobile) {
           position: relative;
           top: auto;
@@ -167,10 +168,28 @@
       padding-right: 2em;
     }
   }
-
   .navbar .navbar-nav > .active > a,
   .navbar .navbar-nav > .active > a:focus,
-  .navbar .navbar-nav > .active > a:hover {
+  .navbar .navbar-nav > .active > a:hover{
+    background-color: transparent;
+    span {
+      img {
+        &:nth-child(1) {
+          opacity: 0;
+        }
+
+        &:nth-child(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .navbar .navbar-nav > li:hover > a
+  // ,
+  // .navbar .navbar-nav > .active > a,
+  // .navbar .navbar-nav > .active > a:focus,
+  // .navbar .navbar-nav > .active > a:hover
+  {
     background-color: transparent;
     color: $site-color-1;
 
