@@ -1,4 +1,10 @@
 .list_circle {
+    a {
+      text-decoration: none !important;
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
   .item {
     width: 174px;
     height: 194px;
@@ -14,15 +20,10 @@
     padding-bottom: 10px;
     transition: all 0.2s;
     background-size: 100% 100%;
-
     &:hover {
-      opacity: 0.9;
+      opacity: 0.8;
+      background-image: url("../images/circle_blue_active.png");
     }
-
-    a {
-      text-decoration: none;
-    }
-
     span {
       position: relative;
       text-align: center;

@@ -227,6 +227,12 @@ body, html {
   display: block;
   margin-right: 0; }
 
+.list_circle a {
+  text-decoration: none !important;
+  padding: 0;
+  margin: 0;
+  display: block; }
+
 .list_circle .item {
   width: 174px;
   height: 194px;
@@ -251,9 +257,8 @@ body, html {
   transition: all 0.2s;
   background-size: 100% 100%; }
   .list_circle .item:hover {
-    opacity: 0.9; }
-  .list_circle .item a {
-    text-decoration: none; }
+    opacity: 0.8;
+    background-image: url("../images/circle_blue_active.png"); }
   .list_circle .item span {
     position: relative;
     text-align: center;
