@@ -11,15 +11,21 @@ $(document).ready(function() {
   // });
   //
   //
+try {
+    if ($('html').hasClass('isMobile')) {
+       $('.list_1_home_page').owlCarousel({
+           loop:true,
+           margin:0,
+           nav:true,
+           items:1
+       });
+    };
+} catch (e) {
 
-   if ($('html').hasClass('isMobile')) {
-      $('.list_1_home_page').owlCarousel({
-          loop:true,
-          margin:0,
-          nav:true,
-          items:1
-      });
-   };
+} finally {
+
+}
+
   if ($('html').hasClass('isDesktop')) {
     new WOW().init();
   };
@@ -43,14 +49,16 @@ $(document).ready(function() {
     $(this).addClass('clicked')
   })
   $(".img_x .btn_close").on('click', function() {
-    $('.intro_x').mouseleave();
+    closeDetail()
   })
-  $('.intro_x').on("mouseleave", function() {
-    $('.item_hover_intro').find(".dot").removeClass("op0");
-    $('.item_hover_intro').find(".dot").removeClass("dothover");
-    $('.intro_x').find(".img_x").removeClass("active");
-    $('.intro_x').find(".img_x").removeClass("clicked");
-  })
+
+  function closeDetail(){
+      $('.item_hover_intro').find(".dot").removeClass("op0");
+      $('.item_hover_intro').find(".dot").removeClass("dothover");
+      $('.intro_x').find(".img_x").removeClass("active");
+      $('.intro_x').find(".img_x").removeClass("clicked");
+  }
+
   function hoverintro(x) {
     $('.item_hover_intro .x00' + x).on("mouseenter", function() {
       $('.item_hover_intro').find(".dot").removeClass("op0");
@@ -64,12 +72,39 @@ $(document).ready(function() {
     })
   }
 
-  hoverintro(2)
-  hoverintro(3)
-  hoverintro(4)
-  hoverintro(5)
+  function clickintro(x) {
+    $('.item_hover_intro .x00' + x).on("click", function() {
+      $('.item_hover_intro').find(".dot").removeClass("op0");
+      $('.item_hover_intro').find(".dot").removeClass("dothover");
+      $('.intro_x').find(".img_x").removeClass("active");
+      $('.intro_x').find(".img_x").removeClass("clicked");
+
+      $('.intro_x').find(".img_x-" + x).addClass("active");
+      $(this).addClass('dothover');
+      $(this).siblings().addClass('op0');
+    })
+  }
+  $('.intro_x').on("mouseleave", function() {
+    $('.item_hover_intro').find(".dot").removeClass("op0");
+    $('.item_hover_intro').find(".dot").removeClass("dothover");
+    $('.intro_x').find(".img_x").removeClass("active");
+    $('.intro_x').find(".img_x").removeClass("clicked");
+  })
+
+  if($('html').hasClass('isDesktop')){
 
 
+      hoverintro(2)
+      hoverintro(3)
+      hoverintro(4)
+      hoverintro(5)
+  }
+  else if ($('html').hasClass('isMobile')) {
+      clickintro(2)
+      clickintro(3)
+      clickintro(4)
+      clickintro(5)
+  }
 });
 
 
