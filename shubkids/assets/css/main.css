@@ -267,6 +267,8 @@ body, html {
   -o-transition: all 0.2s;
   transition: all 0.2s;
   background-size: 100% 100%; }
+  .isPhone .list_circle .item {
+    font-size: 1em; }
   .list_circle .item:hover {
     opacity: 0.8;
     background-image: url("../images/circle_blue_active.png"); }
@@ -281,8 +283,8 @@ body, html {
   .isPhone .list_circle .row > * {
     width: 50%; }
     .isPhone .list_circle .row > * .item {
-      width: 150px;
-      height: 167.24138px; }
+      width: 130px;
+      height: 144.94253px; }
 
 .page_news {
   padding-top: 6rem;
@@ -630,10 +632,33 @@ body, html {
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 1em;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    position: relative; }
+    .page_intro .section_1 .img_bg_left {
+      position: absolute;
+      top: 0;
+      right: calc(100% - 15%);
+      z-index: 2;
+      width: 16%;
+      top: 7vw; }
+      @media (max-width: 1366px) {
+        .page_intro .section_1 .img_bg_left {
+          right: calc(100% - 8%);
+          width: 14%;
+          top: 8vw; } }
+      .isMobile .page_intro .section_1 .img_bg_left {
+        width: 36%;
+        right: calc(100% - 23%);
+        top: 7vw; }
+      .page_intro .section_1 .img_bg_left img {
+        width: 100%; }
     .page_intro .section_1 .title {
       padding: 0;
       margin: 0; }
+      .isMobile .page_intro .section_1 .title {
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 5%; }
       .page_intro .section_1 .title img {
         max-width: 100%; }
     .page_intro .section_1 .dlf {
@@ -662,11 +687,16 @@ body, html {
       font-weight: 700;
       margin-bottom: 1em;
       padding-right: 1.7em; }
+      .isMobile .page_intro .section_1 .txt1 {
+        padding-right: 0;
+        font-size: 1em; }
     .page_intro .section_1 .txt2 {
       font-weight: 500;
       font-size: 1.2em;
       color: #00559D;
       text-align: justify; }
+      .isMobile .page_intro .section_1 .txt2 {
+        font-size: 0.9em; }
     .isMobile .page_intro .section_1 .cols02_intro {
       margin-top: 2em; }
     .page_intro .section_1 .cols02_intro .cols02_intro__inner {
@@ -674,6 +704,8 @@ body, html {
       width: 100%;
       height: 100%;
       background-color: #fff; }
+      .isMobile .page_intro .section_1 .cols02_intro .cols02_intro__inner {
+        position: relative; }
     .page_intro .section_1 .cols02_intro .txt3 {
       background-color: #FDD602;
       text-align: center;
@@ -813,12 +845,10 @@ body, html {
           .isMobile .page_intro .section_1 .intro_x .item_hover_intro .dot {
             margin-top: -5%;
             margin-left: -19%; }
-          .page_intro .section_1 .intro_x .item_hover_intro .dot.op0, .page_intro .section_1 .intro_x .item_hover_intro .dot:hover {
-            opacity: 0;
-            width: 100px;
-            height: 100px;
-            margin-top: -30px;
-            margin-left: -30px; }
+          .page_intro .section_1 .intro_x .item_hover_intro .dot.op0 {
+            opacity: 0; }
+          .isDesktop .page_intro .section_1 .intro_x .item_hover_intro .dot:hover {
+            opacity: 0; }
           .page_intro .section_1 .intro_x .item_hover_intro .dot.dothover {
             opacity: 0;
             pointer-events: none; }
@@ -841,6 +871,9 @@ body, html {
           .page_intro .section_1 .intro_x .item_hover_intro .dot.x002 {
             top: 47%;
             left: 26%; }
+            .isMobile .page_intro .section_1 .intro_x .item_hover_intro .dot.x002 {
+              top: 51%;
+              left: 31%; }
           .page_intro .section_1 .intro_x .item_hover_intro .dot.x003 {
             top: 27%;
             left: 95%; }
@@ -849,6 +882,9 @@ body, html {
           .page_intro .section_1 .intro_x .item_hover_intro .dot.x004 {
             top: 65%;
             left: 52%; }
+            .isMobile .page_intro .section_1 .intro_x .item_hover_intro .dot.x004 {
+              top: 67%;
+              left: 55%; }
           .page_intro .section_1 .intro_x .item_hover_intro .dot.x005 {
             top: 21%;
             left: 31%; }
@@ -923,7 +959,8 @@ body, html {
       position: relative; }
       .isMobile .page_intro .section_4 .txt {
         margin-right: 14%;
-        margin-left: 14%; }
+        margin-left: 14%;
+        font-size: 1em; }
       .page_intro .section_4 .txt:before {
         position: absolute;
         border-radius: 5px;
@@ -1176,7 +1213,7 @@ body, html {
     font-size: 1.2em;
     padding: 1.2em;
     font-weight: 500;
-    border-radius: 0  90px 0 0;
+    border-radius: 0 90px 0 0;
     position: relative; }
     .isPhone .page_detail_2 .rows_02 {
       padding: 0.5em; }
@@ -1215,8 +1252,7 @@ body, html {
     padding: 1.2em;
     padding-bottom: 0; }
     .isPhone .page_detail_2 .rows_03 {
-      padding: 0.5em;
-      padding-bottom: 0; }
+      padding: 0.5em 0.5em 0; }
     .page_detail_2 .rows_03 table td {
       vertical-align: top;
       padding-right: 6px;
