@@ -1535,7 +1535,6 @@ img.shadow{
     .menu_login_regis {
         text-align: center;
 
-
         &__content {
             width: 500px;
             max-width: 100%;
@@ -1559,7 +1558,6 @@ img.shadow{
                 background-color: #eee;
                 cursor: pointer;
                 padding: 0.2em 0;
-                @extend .font_btn;
                 @include mdevice(mobile){
                     font-size: 1.5em;
                 }
@@ -1568,14 +1566,16 @@ img.shadow{
                     color: #555;
                     text-decoration: none;
                 }
-
                 &:nth-child(1){
-                    width: 49.5%;
-                    margin-right: 0.5%;
+                        width: 49.5%;
+                        margin-right: 0.5%; 
                 }
 
                 &.active {
+
                     background-color: $site-color-2;
+
+
                     a {
                         color: #000;
                     }
@@ -1707,7 +1707,7 @@ img.shadow{
         .button_login {
             background-color: $site-color-2;
             font-weight: bold;
-            font-size: 2.6em;
+            font-size: 3em;
             text-align: center;
             border-radius: 20px;
             border: none;
@@ -1716,7 +1716,6 @@ img.shadow{
             color: #000;
             text-decoration: none;
             display: block;
-            @extend .font_btn;
             @include mdevice(mobile){
                 font-size: 1.4em;
                 padding: 0.5em 0;

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=vietnamese");
-@import url("https://fonts.googleapis.com/css?family=Roboto:500");
 .ttu {
   text-transform: uppercase; }
 
@@ -1423,7 +1422,7 @@ body, html {
   .form_login .form_item .button_login {
     background-color: #FDD602;
     font-weight: bold;
-    font-size: 2.6em;
+    font-size: 3em;
     text-align: center;
     border-radius: 20px;
     border: none;
@@ -1804,10 +1803,6 @@ body, html {
 
 body {
   font-family: 'Quicksand', sans-serif; }
-
-.font_btn, .page_login .menu_login_regis__content .item, .form_login .form_item .button_login {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500 !important; }
 
 @media (min-width: 1400px) {
   .container {
