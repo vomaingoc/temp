@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=vietnamese');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 body {
   font-family: 'Quicksand', sans-serif;
 }
-
+.font_btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 !important;
+}
 .container {
   @include mscreen(xxl) {
     max-width: $maxWidthContent2;
@@ -13,11 +16,14 @@ body {
     max-width: 1100px;
   }
 
-
+}
+.container_s2 {
+   width:800px;
+   max-width: 100%;
 }
 @media (max-width:1400px) {
   .container_s2 {
-    max-width:800px;
+  //  max-width:800px;
   }
 }
 .title_page {
@@ -597,13 +603,26 @@ body {
 
   .logo_footer {
     margin-top: 6rem;
+    p{
+      margin-top: 24px;
+      font-size: 1.5em;
+      @include mdevice(phone){
+        font-size: 1.2em;
+        img{
+          width: 12px;
+        }
+      }
+      img{
+        margin-right: 8px;
+      }
+    }
   }
 
   .list_libs {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 6rem;
     @include mdevice(mobile) {
-      margin-top: 2em;
+      margin-top: 1em;
       margin-bottom: 2em;
     }
 
@@ -686,10 +705,34 @@ body {
 
 .modal_event_home{
   background-color: $site-color-7 !important;
+  &.modal_dangkydatcho{
+    background: #fff  !important;
+    padding: 0  !important
+  }
 
   &__inner{
     color: #000000;
     font-size: 1.3em;
     padding: 1em;
+  }
+.btn_close_modal_dangkydatcho{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+  .dangkydatcho_inner{
+    background-image: url("../images/hoatdong/bg_modal_hoatdong.png");
+    background-size: 100% 100%;
+
+    color: $site-color-3;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding:4em  3em;
+
+    a{
+      color: $site-color-3;
+      text-decoration: none !important
+    }
+
   }
 }

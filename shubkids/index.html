@@ -46,7 +46,7 @@
                             <!-- <li><a href="" title=""><span class="sp1"><img src="assets/images/menu_icon_3.png" alt=""><img src="assets/images/menu_icon_3_active.png" alt=""></span><span class="sp2"></span></a></li> -->
                             <li><a href="intro.html" title="Giới thiệu"><span class="sp1"><img src="assets/images/menu_icon_4.png" alt=""><img src="assets/images/menu_icon_4_active.png" alt=""></span><span class="sp2">Giới thiệu</span></a></li>
                             <!-- <li><a href="news.html" title="Bản tin"><span class="sp1"><img src="assets/images/menu_icon_5.png" alt=""><img src="assets/images/menu_icon_5_active.png" alt=""></span><span class="sp2">Bản tin</span></a></li> -->
-                            <!-- <li><a href="" title=""><span class="sp1"><img src="assets/images/menu_icon_6.png" alt=""><img src="assets/images/menu_icon_6_active.png" alt=""></span><span class="sp2"></span></a></li> -->
+                            <li><a href="dangnhap.html" title=""><span class="sp1"><img src="assets/images/menu_icon_6.png" alt=""><img src="assets/images/menu_icon_6_active.png" alt=""></span><span class="sp2">Đăng nhập</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                                             <a class="my_btn my_btn-1">
                                                 Tìm hiểu thêm  <img src="assets/images/icon_continue.png" alt="">
                                             </a>
-                                            <a class="my_btn my_btn-2" data-fancybox  href="#dangkydatcho">
+                                            <a class="my_btn my_btn-2" data-fancybox   data-src="#dangkydatcho" href="javascript:;"  data-modal="true">
                                                 <span class="inner">
                                                     <span>
                                                         ĐĂNG KÝ<br> ĐẶT CHỖ
@@ -164,23 +164,25 @@
             </div>
             <div id="thamgiasukien" style="display: none" class="modal_event_home">
               <div class="modal_event_home__inner">
-              Các sự kiện đang được cập nhật.<br/>Hẹn gặp lại bạn trong thời gian sắp tới nhé!
-
+              Các sự kiện đang được cập nhật. <br/>Hẹn gặp lại bạn trong thời gian sắp tới nhé!
               </div>
             </div>
 
             <div id="thoikhoabieu" style="display: none" class="modal_event_home">
               <div class="modal_event_home__inner">
-              Thời khoá biểu các khoá học đang được cập nhật.<br/>Hẹn gặp lại bạn trong thời gian sắp tới nhé!
+              Thời khoá biểu các khoá học đang được cập nhật.<br/> Hẹn gặp lại bạn trong thời gian sắp tới nhé!
               </div>
             </div>
 
-            <div id="dangkydatcho" style="display: none" class="modal_event_home">
-                <div class="modal_event_home__inner">
-                        Chức năng này đang được cập nhật.<br/>Hẹn gặp lại bạn trong thời gian sắp tới nhé!
-
+            <div id="dangkydatcho" style="display: none" class="modal_event_home modal_dangkydatcho">
+              <a data-fancybox-close class="btn_close_modal_dangkydatcho"><img src="assets/images/icon_close.png" alt=""></a>
+                <div class="modal_event_home__inner dangkydatcho_inner">
+                  Để đăng ký trải nghiệm các hoạt động tại S.hub Kids, vui lòng liên hệ: <br>
+                  Không gian công nghệ thiếu nhi<br>
+                  Điện thoại: <a href="tel:028 38 255 055 ">028 38 255 055</a> - số nội bộ 213<br>
+                  Email: <a href="mailto:thuvienthanhpho@gmail.com">thuvienthanhpho@gmail.com</a><br>
                 </div>
-              </div>
+            </div>
 
               <div class="section_home_3">
                 <h2 class="title_page">
@@ -421,6 +423,7 @@
                 </div>
                 <div class="logo_footer">
                     <img src="assets/images/logo_footer.png" alt="">
+                    <p><img src="assets/images/icon_footer_2.png" alt=""><span>Tìm hiểu thêm về hệ thống KHÔNG GIAN CHIA SẺ trên toàn quốc:</span></p>
                 </div>
 
                 <div class="row list_libs">
