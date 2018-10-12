@@ -806,3 +806,60 @@ body {
     }
   }
 }
+
+
+.calendar_booking  {
+  $bgcolor: '#DBE7EB';
+  margin-top: 3em;
+
+  background-color: #DBE7EB;
+  padding: 8px;
+
+  .col-left-1{
+    background: #fff;
+    img{
+      max-width: 100%;
+    }
+
+    .calendar_booking__month{
+      padding: 8px;
+    }
+
+    .calendar_booking__day{
+      background-color: $site-color-3;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      padding:0.2em 0.5em;
+
+      .line_controls{
+        border-bottom: 1px solid #fff;
+        position: relative;
+
+        .icon_l{
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin-top: -13px;
+          display: inline-block;
+          width: 17px;
+          height: 26px;
+          background-image: url("../images/booking/booking_icon_arr_left.png");
+          background-repeat: no-repeat;
+        }
+        .icon_r{
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-top: -13px;
+          display: inline-block;
+          width: 17px;
+          height: 26px;
+          background-image: url("../images/booking/booking_icon_arr_right.png");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

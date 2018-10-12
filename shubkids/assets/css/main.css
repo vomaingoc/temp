@@ -2409,6 +2409,47 @@ body {
       .menu_booking__item.active .txt2 {
         font-weight: 500; }
 
+.calendar_booking {
+  margin-top: 3em;
+  background-color: #DBE7EB;
+  padding: 8px; }
+  .calendar_booking .col-left-1 {
+    background: #fff; }
+    .calendar_booking .col-left-1 img {
+      max-width: 100%; }
+    .calendar_booking .col-left-1 .calendar_booking__month {
+      padding: 8px; }
+    .calendar_booking .col-left-1 .calendar_booking__day {
+      background-color: #00559D;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 0.2em 0.5em; }
+      .calendar_booking .col-left-1 .calendar_booking__day .line_controls {
+        border-bottom: 1px solid #fff;
+        position: relative; }
+        .calendar_booking .col-left-1 .calendar_booking__day .line_controls .icon_l {
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin-top: -13px;
+          display: inline-block;
+          width: 17px;
+          height: 26px;
+          background-image: url("../images/booking/booking_icon_arr_left.png");
+          background-repeat: no-repeat; }
+        .calendar_booking .col-left-1 .calendar_booking__day .line_controls .icon_r {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin-top: -13px;
+          display: inline-block;
+          width: 17px;
+          height: 26px;
+          background-image: url("../images/booking/booking_icon_arr_right.png");
+          background-repeat: no-repeat; }
+
 .isMobile .hide-mobile {
   display: none !important; }
 
