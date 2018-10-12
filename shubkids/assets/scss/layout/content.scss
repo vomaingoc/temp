@@ -1568,7 +1568,7 @@ img.shadow{
                 }
                 &:nth-child(1){
                         width: 49.5%;
-                        margin-right: 0.5%; 
+                        margin-right: 0.5%;
                 }
 
                 &.active {
@@ -2050,4 +2050,85 @@ img.shadow{
             }
         }
     }
+}
+
+
+.page_booking{
+  background-image: url("../images/booking/booking_bg_4.png");
+  background-size: 100% auto;
+  background-position: 0 bottom;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  min-height: 700px;
+
+  .row_menu_booking{
+    background-color: $site-color-2;
+  }
+}
+
+.page_booking_huongdan{
+  background-image: url("../images/booking/booking_bg.png");
+  .section_1{
+    padding: 3em 0;
+
+    .row_huongdan{
+      position: relative;
+      .line-1{
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+        left: 50%;
+        margin-left: -25px;
+        display: inline-block;
+        width: 10px;
+        background-color: #fff;
+        background-color: $site-color-2;
+      }
+    }
+  }
+
+  .item-hd{
+    background-color: #fff;
+    padding: 1em 2em;
+    margin-top: 3em;
+    img{
+      max-width: 100%;
+    }
+
+    &.item-l{
+      border-radius: 0 150px 0 150px;
+      .txt3{
+        text-align: right;
+      }
+      .txt2{
+        padding-left: 3em;
+      }
+    }
+
+    &.item-r{
+      border-radius:  150px  0  150px 0;
+      .txt3{
+        text-align: right;
+        padding-right: 3em
+      }
+      .txt2{
+        padding-left: 1em;
+      }
+    }
+
+    &.item-1{
+      background-color: $site-color-2;
+    }
+    &.item-2{
+      background-color: #BCBDBF;
+      margin-right: 30px;
+    }
+    &.item-3{
+      background-color: $site-color-1;
+    }
+  }
+}
+
+.page_booking_sankhau{
+  background-image: url("../images/booking/booking_bg_3.png");
 }

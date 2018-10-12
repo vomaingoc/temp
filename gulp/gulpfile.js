@@ -18,6 +18,6 @@ gulp.task('scss', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('assets/scss/*.scss', ['scss']);
+  gulp.watch('assets/scss/main.scss', ['scss']);
   // Other watchers
 })

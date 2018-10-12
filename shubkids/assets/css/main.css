@@ -1672,6 +1672,62 @@ body, html {
         .page_taikhoan .box_content_1_inner .box_infor .chinhsua .icon img {
           width: 20px; }
 
+.page_booking {
+  background-image: url("../images/booking/booking_bg_4.png");
+  background-size: 100% auto;
+  background-position: 0 bottom;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  min-height: 700px; }
+  .page_booking .row_menu_booking {
+    background-color: #FDD602; }
+
+.page_booking_huongdan {
+  background-image: url("../images/booking/booking_bg.png"); }
+  .page_booking_huongdan .section_1 {
+    padding: 3em 0; }
+    .page_booking_huongdan .section_1 .row_huongdan {
+      position: relative; }
+      .page_booking_huongdan .section_1 .row_huongdan .line-1 {
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+        left: 50%;
+        margin-left: -25px;
+        display: inline-block;
+        width: 10px;
+        background-color: #fff;
+        background-color: #FDD602; }
+  .page_booking_huongdan .item-hd {
+    background-color: #fff;
+    padding: 1em 2em;
+    margin-top: 3em; }
+    .page_booking_huongdan .item-hd img {
+      max-width: 100%; }
+    .page_booking_huongdan .item-hd.item-l {
+      border-radius: 0 150px 0 150px; }
+      .page_booking_huongdan .item-hd.item-l .txt3 {
+        text-align: right; }
+      .page_booking_huongdan .item-hd.item-l .txt2 {
+        padding-left: 3em; }
+    .page_booking_huongdan .item-hd.item-r {
+      border-radius: 150px  0  150px 0; }
+      .page_booking_huongdan .item-hd.item-r .txt3 {
+        text-align: right;
+        padding-right: 3em; }
+      .page_booking_huongdan .item-hd.item-r .txt2 {
+        padding-left: 1em; }
+    .page_booking_huongdan .item-hd.item-1 {
+      background-color: #FDD602; }
+    .page_booking_huongdan .item-hd.item-2 {
+      background-color: #BCBDBF;
+      margin-right: 30px; }
+    .page_booking_huongdan .item-hd.item-3 {
+      background-color: #6AB5E4; }
+
+.page_booking_sankhau {
+  background-image: url("../images/booking/booking_bg_3.png"); }
+
 .frm_search {
   position: relative; }
   .frm_search__inner {
@@ -1910,11 +1966,11 @@ body {
     flex-direction: column; }
     .isMobile .section_home_1 .slider_b {
       position: relative;
-      margin-top: 0em;
+      margin-top: 0;
       margin-bottom: 1em;
       background-image: url("../images/home/section_1_bg_mobile_2.jpg"), url("../images/home/section_1_bg_mobile_3.jpg");
       background-position: center top, center bottom;
-      background-size: 100% auto,  100% auto;
+      background-size: 100% auto, 100% auto;
       background-repeat: no-repeat, repeat-y; }
     .section_home_1 .slider_b__content {
       margin-bottom: 3em;
@@ -2124,8 +2180,7 @@ body {
   .list_news .item__txt {
     padding: 24px; }
     .isPhone .list_news .item__txt {
-      padding: 12px;
-      padding-bottom: 50px; }
+      padding: 12px 12px 50px; }
     .list_news .item__txt .date {
       margin-bottom: 1em; }
       .isPhone .list_news .item__txt .date {
@@ -2194,7 +2249,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0%;
+    right: 0;
     top: 30%;
     background-color: #6AB5E4; }
   .isPhone .list_news .item .link_right img {
@@ -2281,8 +2336,8 @@ body {
 .modal_event_home {
   background-color: #C3E8F3 !important; }
   .modal_event_home.modal_dangkydatcho {
-    background: #fff  !important;
-    padding: 0  !important; }
+    background: #fff !important;
+    padding: 0 !important; }
   .modal_event_home__inner {
     color: #000000;
     font-size: 1.3em;
@@ -2297,10 +2352,62 @@ body {
     color: #00559D;
     font-size: 1.4em;
     font-weight: 600;
-    padding: 4em  3em; }
+    padding: 4em 3em; }
     .modal_event_home .dangkydatcho_inner a {
       color: #00559D;
       text-decoration: none !important; }
+
+.menu_booking {
+  padding: 1px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+  .menu_booking .menu_booking__item + .menu_booking__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    display: inline-block;
+    background-color: #00559D; }
+  .menu_booking__item {
+    padding: 0.5em 0;
+    position: relative;
+    color: #00559D;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center; }
+    .menu_booking__item__inner {
+      display: inline-block;
+      text-align: left; }
+    .menu_booking__item .txt1 {
+      font-size: 2.6em;
+      white-space: nowrap;
+      line-height: 1; }
+    .menu_booking__item .txt2 {
+      font-size: 1.2em;
+      white-space: nowrap;
+      font-weight: 700; }
+    .menu_booking__item .txt4 {
+      font-size: 1.8em;
+      white-space: nowrap;
+      font-weight: 500; }
+    .menu_booking__item:hover {
+      background-color: #00559D;
+      color: #FDD602; }
+      .menu_booking__item:hover:before {
+        background-color: #FDD602 !important; }
+    .menu_booking__item.active {
+      background-color: #00559D;
+      color: #FDD602; }
+      .menu_booking__item.active .txt1 {
+        font-weight: 700;
+        font-size: 2.5em; }
+      .menu_booking__item.active .txt2 {
+        font-weight: 500; }
 
 .isMobile .hide-mobile {
   display: none !important; }
