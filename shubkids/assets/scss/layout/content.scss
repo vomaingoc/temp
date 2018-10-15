@@ -1523,15 +1523,17 @@
     background-size: cover;
     padding-bottom: 6em;
     padding-top: 6em;
-    @include mdevice(mobile){
+    @include mdevice(mobile) {
         padding-top: 3em;
         padding-bottom: 3em;
     }
-img.shadow{
-    position: relative;
-    top: -10px;
-    z-index:0;
-}
+
+    img.shadow {
+        position: relative;
+        top: -10px;
+        z-index: 0;
+    }
+
     .menu_login_regis {
         text-align: center;
 
@@ -1547,7 +1549,6 @@ img.shadow{
             overflow: hidden;
             margin-bottom: 2em;
 
-
             .item {
                 width: 50%;
                 text-transform: uppercase;
@@ -1558,7 +1559,7 @@ img.shadow{
                 background-color: #eee;
                 cursor: pointer;
                 padding: 0.2em 0;
-                @include mdevice(mobile){
+                @include mdevice(mobile) {
                     font-size: 1.5em;
                 }
 
@@ -1566,15 +1567,14 @@ img.shadow{
                     color: #555;
                     text-decoration: none;
                 }
-                &:nth-child(1){
-                        width: 49.5%;
-                        margin-right: 0.5%;
+
+                &:nth-child(1) {
+                    width: 49.5%;
+                    margin-right: 0.5%;
                 }
 
                 &.active {
-
                     background-color: $site-color-2;
-
 
                     a {
                         color: #000;
@@ -1592,7 +1592,7 @@ img.shadow{
         overflow: hidden;
         position: relative;
         z-index: 1;
-        @include mdevice(mobile){
+        @include mdevice(mobile) {
             display: block;
         }
 
@@ -1614,10 +1614,6 @@ img.shadow{
             margin-top: 1em;
         }
 
-        .tar {
-            text-align: right;
-        }
-
         .img1 {
             max-width: 80%;
         }
@@ -1627,7 +1623,7 @@ img.shadow{
             padding-top: 6em;
             padding-bottom: 13em;
             max-width: 40%;
-            @include mdevice(mobile){
+            @include mdevice(mobile) {
                 max-width: 100%;
                 padding-top: 3em;
                 padding-bottom: 6em;
@@ -1640,17 +1636,16 @@ img.shadow{
             padding-top: 6em;
             padding-bottom: 13em;
             max-width: 30%;
-            @include mdevice(mobile){
+            @include mdevice(mobile) {
                 width: 100%;
                 max-width: 100%;
             }
         }
 
         .cols_02 {
-
             background-color: #fff;
             max-width: 70%;
-            @include mdevice(mobile){
+            @include mdevice(mobile) {
                 max-width: 100%;
             }
         }
@@ -1666,21 +1661,21 @@ img.shadow{
             display: flex;
             justify-content: center;
             align-items: center;
-            @include mdevice(mobile){
+            @include mdevice(mobile) {
                 display: none;
             }
         }
 
         .form_login {
             padding: 5em 3em;
-            @include mdevice(mobile){
-                 padding: 2em;
+            @include mdevice(mobile) {
+                padding: 2em;
             }
 
             &.form_dk {
                 padding: 3em;
-                @include mdevice(mobile){
-                     padding: 2em;
+                @include mdevice(mobile) {
+                    padding: 2em;
                 }
             }
         }
@@ -1716,7 +1711,7 @@ img.shadow{
             color: #000;
             text-decoration: none;
             display: block;
-            @include mdevice(mobile){
+            @include mdevice(mobile) {
                 font-size: 1.4em;
                 padding: 0.5em 0;
             }
@@ -1726,7 +1721,7 @@ img.shadow{
                 padding-left: 2em;
                 padding-right: 2em;
                 display: inline-block;
-                @include mdevice(mobile){
+                @include mdevice(mobile) {
                     width: 100%;
                     display: block;
                 }
@@ -1741,7 +1736,7 @@ img.shadow{
         font-weight: bold;
         width: 100%;
         padding-left: 40px;
-        @include mdevice(mobile){
+        @include mdevice(mobile) {
             font-size: 1em;
         }
     }
@@ -1785,7 +1780,7 @@ img.shadow{
     background-size: cover;
     padding-bottom: 10em;
     padding-top: 10em;
-    @include mdevice(mobile){
+    @include mdevice(mobile) {
         padding-top: 3em;
         padding-bottom: 3em;
     }
@@ -1802,31 +1797,31 @@ img.shadow{
         right: 20%;
         font-size: 1.7em;
         font-weight: 500;
-        @include mdevice(mobile){
-             font-size: 0.7em;
-             right: 10%;
-             top: 33%;
+        @include mdevice(mobile) {
+            font-size: 0.7em;
+            right: 10%;
+            top: 33%;
         }
 
         > a {
             color: #fff;
             text-decoration: underline;
         }
-.btn_gr{
-    text-align: right;
-    margin-top: 1em;
-}
-        .my_btn_3{
-            img{
+
+        .btn_gr {
+            text-align: right;
+            margin-top: 1em;
+        }
+
+        .my_btn_3 {
+            img {
                 margin-left: 5px;
             }
             font-size: 0.9em;
-            padding: 0;
-            padding-right: 0.5em;
-            padding-top: 0.2em;
-            padding-bottom: 0.2em;
+            padding: 0.2em 0.5em 0.2em 0;
             color: $site-color-3;
-            a{
+
+            a {
                 color: $site-color-3;
             }
         }
@@ -2052,83 +2047,606 @@ img.shadow{
     }
 }
 
+.page_booking {
+    background-image: url("../images/booking/booking_bg_4.png");
+    background-size: 100% auto;
+    background-position: 0 bottom;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    min-height: 700px;
 
-.page_booking{
-  background-image: url("../images/booking/booking_bg_4.png");
-  background-size: 100% auto;
-  background-position: 0 bottom;
-  padding-bottom: 5em;
-  padding-top: 5em;
-  min-height: 700px;
-
-  .row_menu_booking{
-    background-color: $site-color-2;
-  }
-}
-
-.page_booking_huongdan{
-  background-image: url("../images/booking/booking_bg.png");
-  .section_1{
-    padding: 3em 0;
-
-    .row_huongdan{
-      position: relative;
-      .line-1{
-        position: absolute;
-        bottom: 0;
-        height: 60%;
-        left: 50%;
-        margin-left: -25px;
-        display: inline-block;
-        width: 10px;
-        background-color: #fff;
+    .row_menu_booking {
         background-color: $site-color-2;
-      }
     }
-  }
-
-  .item-hd{
-    background-color: #fff;
-    padding: 1em 2em;
-    margin-top: 3em;
-    img{
-      max-width: 100%;
-    }
-
-    &.item-l{
-      border-radius: 0 150px 0 150px;
-      .txt3{
-        text-align: right;
-      }
-      .txt2{
-        padding-left: 3em;
-      }
-    }
-
-    &.item-r{
-      border-radius:  150px  0  150px 0;
-      .txt3{
-        text-align: right;
-        padding-right: 3em
-      }
-      .txt2{
-        padding-left: 1em;
-      }
-    }
-
-    &.item-1{
-      background-color: $site-color-2;
-    }
-    &.item-2{
-      background-color: #BCBDBF;
-      margin-right: 30px;
-    }
-    &.item-3{
-      background-color: $site-color-1;
-    }
-  }
 }
 
-.page_booking_sankhau{
-  background-image: url("../images/booking/booking_bg_3.png");
+.page_booking_huongdan {
+    background-image: url("../images/booking/booking_bg.png");
+
+    .section_1 {
+        padding: 3em 0;
+
+        .row_huongdan {
+            position: relative;
+
+            .line-1 {
+                position: absolute;
+                bottom: 0;
+                height: 60%;
+                left: 50%;
+                margin-left: -25px;
+                display: inline-block;
+                width: 10px;
+                background-color: #fff;
+                background-color: $site-color-2;
+            }
+        }
+    }
+
+    .item-hd {
+        background-color: #fff;
+        padding: 1em 2em;
+        margin-top: 3em;
+
+        img {
+            max-width: 100%;
+        }
+
+        &.item-l {
+            border-radius: 0 150px 0 150px;
+
+            .txt3 {
+                text-align: right;
+            }
+
+            .txt2 {
+                padding-left: 3em;
+            }
+        }
+
+        &.item-r {
+            border-radius: 150px 0 150px 0;
+
+            .txt3 {
+                text-align: right;
+                padding-right: 3em;
+            }
+
+            .txt2 {
+                padding-left: 1em;
+            }
+        }
+
+        &.item-1 {
+            background-color: $site-color-2;
+        }
+
+        &.item-2 {
+            background-color: #BCBDBF;
+            margin-right: 30px;
+        }
+
+        &.item-3 {
+            background-color: $site-color-1;
+        }
+    }
+}
+
+.page_booking_sankhau {
+    background-image: url("../images/booking/booking_bg_3.png");
+
+    .link_email {
+        color: $site-color-1;
+    }
+
+    .calendar_booking__col2 {
+        .img_top {
+            padding-bottom: 0 !important;
+        }
+
+        .date_time {
+            position: absolute;
+            //width: 80%;
+            top: 60%;
+            text-align: left;
+            left: 40%;
+
+            .date_time__item_1 {
+                color: $site-color-3;
+                font-size: 2em;
+                line-height: 1;
+                font-weight: 700;
+
+                .img_sm {
+                    position: relative;
+                    top: -4px;
+                }
+            }
+
+            .date_time__item_2 {
+                color: #fff;
+                font-size: 1.7em;
+                line-height: 1;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .calendar_booking .list_day .item__txt2 {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            padding-top: 0.5em;
+            padding-bottom: 2em;
+        }
+
+        .txt2__item {
+            border-bottom: 1px solid #eee;
+            min-height: 40px;
+            font-weight: 500;
+
+            &__t1 {
+                text-transform: uppercase;
+                color: $site-color-3;
+                font-size: 0.8em;
+                letter-spacing: -1px;
+                line-height: 1.2;
+                text-align: center;
+            }
+
+            &__t2 {
+                text-transform: uppercase;
+                color: #ccc;
+                font-size: 0.8em;
+                text-align: center;
+                line-height: 1.2;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .scroll_view {
+        padding: 0 4% 0 8%;
+        height: 500px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-right: 1em;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 20px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            // box-shadow: inset 0 0 5px grey;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #00559D;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #053967;
+        }
+
+        table,
+        td,
+        th {
+            border: 3px solid #1D344D;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            background-color: #DEE8E5;
+            border-collapse: collapse;
+
+            td {
+                padding: 0.2em 0;
+                font-weight: bold;
+                text-align: center;
+
+                &:nth-child(1) {
+                    padding: 1em 0;
+                    font-size: 1.3em;
+                    color: #6D6E71;
+                }
+
+                &:nth-child(2) {
+                    font-size: 1em;
+                    font-weight: 500;
+                    line-height: 1.2;
+                }
+            }
+
+            tr {
+                &.tr_event_1 {
+                    background-color: #fff;
+
+                    td {
+                        &:nth-child(2) {
+                            color: #CED0B2;
+                        }
+                    }
+                }
+
+                &.tr_event_2 {
+                    background-color: #fff;
+                    color: $site-color-3;
+
+                    td {
+                        &:nth-child(1) {
+                            color: $site-color-3;
+                        }
+                    }
+                }
+
+                &.tr_booking {
+                    background-color: $site-color-2;
+
+                    td {
+                        &:nth-child(2) {
+                            color: $site-color-3;
+                            font-size: 1.8em;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page_booking_thienvan {
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-image: url("../images/booking/booking_bg_2.png");
+
+    .calendar_booking__col2 {
+        .td {
+            text-align: center;
+
+            &__1 {
+                font-weight: bold;
+                font-size: 2em;
+                color: $site-color-3;
+                line-height: 1;
+            }
+
+            &__2 {
+                font-weight: bold;
+                font-size: 5.5em;
+                color: #fff;
+                line-height: 1;
+            }
+        }
+
+        .date_time {
+            padding: 2em 0;
+
+            &__item {
+                margin-top: 0.5em;
+                background-color: #BCD5DF;
+                color: $site-color-3;
+                font-weight: 700;
+                font-size: 2em;
+                text-align: center;
+                padding: 0.2em 0;
+                border-bottom: 1px solid #5F5D5E;
+            }
+        }
+    }
+}
+
+.page_booking_stem {
+    background-image: url("../images/booking/booking_bg_5.png");
+}
+
+.row_booking_dangky {
+    background-color: #fff;
+    padding: 3em;
+
+    .row_booking_dangky__tt{
+        position: relative;
+        font-weight: 700;
+        font-size: 2.5em;
+        .icon_back{
+            position: absolute;
+            left: -30px;
+            top: 6px;
+            content: '';
+            display: inline-block;
+            width: 17px;
+            height: 30px;
+            background-image: url("../images/booking/icon_back_tt.png");
+            background-size: 100% 100%;
+        }
+    }
+
+    .txt1 {
+        font-weight: bold;
+        font-size: 1.4em;
+        margin: 1em 0;
+        color: #414042;
+
+        &__1 {
+            background-color: $site-color-2;
+            border-bottom: 1px solid #ccc;
+            padding-left: 5px;
+        }
+    }
+
+    &__form {
+        .text-blue {
+            color: $site-color-1;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .form_item {
+            position: relative;
+            margin-bottom: 3em;
+
+            label {
+                font-size: 1.2em;
+                padding-left: 2px;
+                color: #666;
+                font-weight: 500;
+
+                &.error {
+                    position: absolute;
+                    bottom: -30px;
+                    color: red;
+                    padding-left: 2px;
+                    font-size: 1em;
+                    font-weight: normal;
+                }
+            }
+
+            .input {
+                border: none;
+                border-bottom: 2px solid #aaa;
+                font-size: 1.2em;
+                padding-bottom: 0.2em;
+                font-weight: bold;
+                width: 100%;
+                padding-left: 2px;
+                resize: none;
+                overflow-x: auto;
+            }
+
+            .sao {
+                position: absolute;
+                top: -5px;
+                left: -16px;
+                font-size: 2em;
+                font-weight: bold;
+                color: $site-color-1;
+            }
+
+            .select_nhom {
+                color: #777;
+            }
+
+            &.item_select {
+                .icon_drop {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: "";
+                    background-image: url("../images/icon_dropdown_2.png");
+                    background-size: 100%;
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    z-index: 4;
+                    pointer-events: none;
+                }
+
+                position: relative;
+                margin-top: 18px;
+                option{
+                    font-size: 1.2em;
+                    padding-bottom: 0.2em;
+                    font-weight: bold;
+                }
+
+                &.style2{
+
+                        font-size: 1.3em;
+
+                        .select_nhom{
+                            background-color: $site-color-2 !important;
+                        }
+                        .icon_drop{
+                            top: 10px;
+                        }
+                }
+            }
+
+
+
+            &.item_checkbox {
+                font-size: 1.2em;
+                font-weight: 500;
+                padding-left: 5px;
+                color: #666;
+
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+
+                .checkmark {
+                    position: relative;
+                    display: inline-block;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 30px;
+                    top: 7px;
+                    left: 8px;
+                    border: 1px solid #aaa;
+                    background-color: #fff;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+                    &:after {
+                        left: 9px;
+                        top: 5px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+
+                &:hover input ~ .checkmark {
+                    //background-color: #ccc;
+                }
+
+                input:checked ~ .checkmark {
+                    background-color: $site-color-3;
+                }
+
+                input:checked ~ .checkmark:after {
+                    display: block;
+                }
+            }
+
+            .button_login {
+                background-color: $site-color-2;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+                border-radius: 20px;
+                border: none;
+                text-transform: uppercase;
+                width: 100%;
+                color: #000;
+                text-decoration: none;
+                display: block;
+                @include mdevice(mobile) {
+                    font-size: 1.4em;
+                    padding: 0.5em 0;
+                }
+
+                &.button_dk {
+                    width: auto;
+                    padding-left: 2em;
+                    padding-right: 2em;
+                    display: inline-block;
+                    @include mdevice(mobile) {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .col_note_right {
+
+        color: #fff;
+        margin-left: 1em;
+        position: relative;
+
+
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            width: 100%;
+            height: 100%;
+            background-color: $site-color-3;
+
+
+        }
+
+        &__inner{
+            position: relative;
+            height: 100%;
+            z-index: 1;
+            background-color: $site-color-1;
+            padding: 2em;
+            overflow: hidden;
+        }
+        .p1 .t1 {
+            font-size: 1.7em;
+            font-weight: 500;
+            padding-left: 8px;
+            color: $site-color-2;
+        }.p2{
+            >p{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    width: 45px;
+                    height: 3px;
+                    display: inline-block;
+                    background-color: #fff;
+                    content: '';
+                    left: -50px;
+                    top: 10px;
+
+                }
+            }
+            a{
+                color: $site-color-2;
+                text-decoration: underline;
+            }
+        }
+        .p2:last-child{
+            padding-bottom: 2em;
+        }
+
+        .p3{
+            border-left: 1px solid $site-color-3;
+            font-size: 0.8em;
+            color: #000;
+            margin-bottom: 1em;
+
+            padding-left:20px;
+
+            p{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    width: 16px;
+                    height: 5px;
+                    display: inline-block;
+                    background-color: $site-color-3;
+                    content: '';
+                    left: -20px;
+                    top: 5px;
+                }
+            }
+            p:last-child{
+                //padding-bottom: 1em;
+            }
+        }
+
+        .tbl_tailieu{
+            td{
+                padding: 5px 2px;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
 }
