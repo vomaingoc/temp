@@ -743,6 +743,21 @@ body {
     padding: 1px 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    @include mdevice(mobile){
+      grid-template-columns: repeat(3, 1fr);
+      .menu_booking__item{
+        border: 1px solid $site-color-3;
+
+      }
+    }
+
+    @include mdevice(phone){
+      grid-template-columns: repeat(2, 1fr);
+      .menu_booking__item{
+        border: 1px solid $site-color-3;
+
+      }
+    }
     // grid-gap: 10px;
     .menu_booking__item + .menu_booking__item {
         &:before {
@@ -754,6 +769,9 @@ body {
             width: 2px;
             display: inline-block;
             background-color: $site-color-3;
+              @include mdevice(mobile){
+                display: none;
+              }
         }
     }
 
@@ -765,6 +783,10 @@ body {
         cursor: pointer;
         transition: all 0.3s;
         text-align: center;
+        font-size: 1em;
+        @include mdevice(mobile){
+          font-size: .7em;
+        }
 
         &__inner {
             display: inline-block;
@@ -775,7 +797,7 @@ body {
             font-size: 2.6em;
             white-space: nowrap;
             line-height: 1;
-            // transition: width 0.1s, height 0.1s;
+
         }
 
         .txt2 {
@@ -837,6 +859,7 @@ body {
         .calendar_booking__month {
             position: relative;
             padding: 8px;
+            display: inline-block;
 
             &__txt {
                 position: absolute;
@@ -914,6 +937,14 @@ body {
         padding-right: 8px;
         margin-top: 2em;
         padding-bottom: 2em;
+
+        @include mdevice(mobile){
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mdevice(phone){
+          grid-template-columns: repeat(1, 1fr);
+        }
 
         .item {
             position: relative;
@@ -1165,6 +1196,9 @@ body {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
+    @include mdevice(mobile){
+      display: block;
+    }
 
     .calendar_booking__col2,
     .calendar_booking__col2__inner,
