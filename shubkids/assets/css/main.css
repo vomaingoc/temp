@@ -1669,13 +1669,58 @@ body, html {
 
 .page_booking {
   background-image: url("../images/booking/booking_bg_4.png");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: 0 bottom;
   padding-bottom: 5em;
-  padding-top: 5em;
-  min-height: 700px; }
+  padding-top: 5em; }
+  .page_booking .img_ketqua img {
+    max-width: 100%; }
   .page_booking .row_menu_booking {
     background-color: #FDD602; }
+  .page_booking .menu_hoatdong {
+    text-align: center; }
+    .page_booking .menu_hoatdong__content {
+      width: 250px;
+      max-width: 100%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 40px;
+      overflow: hidden;
+      margin-bottom: 1em;
+      margin-top: 1em; }
+      .page_booking .menu_hoatdong__content .item {
+        width: 50%;
+        font-weight: bold;
+        font-size: 0.8em;
+        text-align: center;
+        color: #555;
+        background-color: #eee;
+        cursor: pointer;
+        padding: 0.2em 0; }
+        .isMobile .page_booking .menu_hoatdong__content .item {
+          font-size: 1em; }
+        .page_booking .menu_hoatdong__content .item a {
+          color: #555;
+          text-decoration: none; }
+        .page_booking .menu_hoatdong__content .item:nth-child(1) {
+          width: 49.5%;
+          margin-right: 0.5%; }
+        .page_booking .menu_hoatdong__content .item.active {
+          background-color: #FDD602; }
+          .page_booking .menu_hoatdong__content .item.active a {
+            color: #000; }
+  .page_booking .txt_xacnhan_thongbao {
+    padding: 2em 3em;
+    text-align: justify; }
+    .page_booking .txt_xacnhan_thongbao td {
+      padding: 5px; }
+    .page_booking .txt_xacnhan_thongbao a img {
+      max-width: 100%; }
 
 .page_booking_huongdan {
   background-image: url("../images/booking/booking_bg.png"); }
@@ -1721,7 +1766,9 @@ body, html {
       background-color: #6AB5E4; }
 
 .page_booking_sankhau {
-  background-image: url("../images/booking/booking_bg_3.png"); }
+  background-image: url("../images/booking/booking_bg_3.png");
+  background-size: cover;
+  background-position: right bottom; }
   .page_booking_sankhau .link_email {
     color: #6AB5E4; }
   .page_booking_sankhau .calendar_booking__col2 .img_top {
@@ -1825,8 +1872,8 @@ body, html {
           font-weight: 700; }
 
 .page_booking_thienvan {
-  background-size: 100% 100%;
-  background-position: center bottom;
+  background-size: cover;
+  background-position: right bottom;
   background-image: url("../images/booking/booking_bg_2.png"); }
   .page_booking_thienvan .calendar_booking__col2 .td {
     text-align: center; }
@@ -1853,7 +1900,9 @@ body, html {
       border-bottom: 1px solid #5F5D5E; }
 
 .page_booking_stem {
-  background-image: url("../images/booking/booking_bg_5.png"); }
+  background-image: url("../images/booking/booking_bg_5.png");
+  background-size: cover;
+  background-position: right bottom; }
 
 .row_booking_dangky {
   background-color: #fff;
@@ -1863,6 +1912,7 @@ body, html {
     font-weight: 700;
     font-size: 2.5em; }
     .row_booking_dangky .row_booking_dangky__tt .icon_back {
+      cursor: pointer;
       position: absolute;
       left: -30px;
       top: 6px;
@@ -1877,6 +1927,18 @@ body, html {
     font-size: 1.4em;
     margin: 1em 0;
     color: #414042; }
+    .row_booking_dangky .txt1.bdb {
+      border-bottom: 2px solid #ccc;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .row_booking_dangky .txt1.bdb .txt1__2 {
+        text-align: right;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
     .row_booking_dangky .txt1__1 {
       background-color: #FDD602;
       border-bottom: 1px solid #ccc;
@@ -1887,9 +1949,9 @@ body, html {
     font-weight: bold; }
   .row_booking_dangky__form .form_item {
     position: relative;
-    margin-bottom: 3em; }
+    margin-bottom: 2em; }
     .row_booking_dangky__form .form_item label {
-      font-size: 1.2em;
+      font-size: 1.1em;
       padding-left: 2px;
       color: #666;
       font-weight: 500; }
@@ -1903,7 +1965,7 @@ body, html {
     .row_booking_dangky__form .form_item .input {
       border: none;
       border-bottom: 2px solid #aaa;
-      font-size: 1.2em;
+      font-size: 1.1em;
       padding-bottom: 0.2em;
       font-weight: bold;
       width: 100%;
@@ -2067,6 +2129,31 @@ body, html {
       padding: 5px 2px; }
     .row_booking_dangky .col_note_right .tbl_tailieu img {
       max-width: 100%; }
+
+.page_booking_sukien_xacnhan {
+  padding-bottom: 0; }
+
+.row_ds_sukien {
+  margin-top: 3em; }
+  .row_ds_sukien__inner {
+    background-color: #E5ECEE; }
+  .row_ds_sukien .img_dangky {
+    position: relative;
+    top: -5px;
+    left: -1px; }
+    .row_ds_sukien .img_dangky img {
+      max-width: 110%; }
+  .row_ds_sukien .p1 {
+    padding: 1em;
+    color: #00559D;
+    font-size: 0.9em;
+    text-align: justify; }
+  .row_ds_sukien .row_ds_sukien_col_right .tieude {
+    font-weight: bold;
+    font-size: 2em;
+    color: #00559D; }
+    .row_ds_sukien .row_ds_sukien_col_right .tieude img {
+      height: 40px; }
 
 .frm_search {
   position: relative; }
@@ -3009,6 +3096,9 @@ body {
 
 .tar {
   text-align: right; }
+
+.text_blue {
+  color: #00559D; }
 
 .isMobile .hide-mobile {
   display: none !important; }

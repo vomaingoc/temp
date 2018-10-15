@@ -52,7 +52,7 @@
             </nav>
         </div>
         <div class="p-content">
-             <div class="page_booking page_booking_thienvan">
+             <div class="page_booking page_booking_stem ">
                 <!-- row_menu_booking  -->
                 <div class="row_menu_booking">
                   <div class="container">
@@ -63,19 +63,19 @@
                           <div class="txt2">đặt chỗ</div>
                         </span>
                      </a>
-                     <a class="menu_booking__item active" href="booking_thienvan.html">
+                     <a class="menu_booking__item " href="booking_thienvan.html">
                         <span class="menu_booking__item__inner">
                           <div class="txt2">đăng ký trải nghiệm</div>
                           <div class="txt1">thiên văn</div>
                         </span>
                      </a>
-                     <a class="menu_booking__item" href="booking_sankhau.html">
+                     <a class="menu_booking__item " href="booking_sankhau.html">
                         <span class="menu_booking__item__inner">
                           <div class="txt2">đăng ký sử dụng</div>
                           <div class="txt1">sân khấu</div>
                         </span>
                      </a>
-                     <a class="menu_booking__item" href="booking_stem.html">
+                     <a class="menu_booking__item active" href="booking_stem.html">
                       <span class="menu_booking__item__inner">
                           <div class="txt2">đăng ký sử dụng phòng</div>
                         <div><span class="txt1">stem</span><span class="txt4"> Academy</span></div>
@@ -99,17 +99,23 @@
 
                         <div class="row">
                             <div class="col-md-8">
-                                <h2 class="row_booking_dangky__tt">
+                                <h2 class="row_booking_dangky__tt text_blue">
                                     <a class="icon_back" href="booking_thienvan.html"> </a>
-                                    ĐĂNG KÝ TRẢI NGHIỆM THIÊN VĂN
+                                    ĐĂNG KÝ PHÒNG HỌC STEM <span style="font-size: 0.5em" >ACADEMY</span>
                                 </h2>
-
+                                <div class="menu_hoatdong">
+                                    <div class="menu_hoatdong__content">
+                                        <div class="item ">
+                                            <a href="">Hoạt động mở</a>
+                                        </div>
+                                        <div class="item active">
+                                           <a href="">Hoạt động riêng</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row_booking_dangky__form">
-                                    <div class="txt1">
-                                        <span class="txt1__1">
-                                            Suất 08:
-                                        </span>
-                                        <span>ngày 15.10.2018</span>
+                                    <div class="menu_form_dk">
+
                                     </div>
 
                                     <div class="row">
@@ -134,7 +140,7 @@
                                         <div class="col-md-12">
                                             <div class="form_item">
                                                 <!-- <label class="error">Err</label> -->
-                                                <input type="text" placeholder="Đơn vị" class="input">
+                                                <input type="text" placeholder="Tên sự kiện" class="input">
                                                 <div class="sao">*</div>
 
                                             </div>
@@ -145,44 +151,87 @@
                                                 <span class="icon_drop"></span>
                                                 <!-- <label class="error">Err</label> -->
                                                 <select class="input select_nhom">
-                                                    <option value="">Số người tham dự NHỎ hơn 12 tuổi</option>
+                                                    <option value="">Chọn loại sự kiện</option>
                                                 </select>
                                                 <div class="sao">*</div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form_item item_select">
-                                                <span class="icon_drop"></span>
-                                                <!-- <label class="error">Err</label> -->
-                                                <select class="input select_nhom">
-                                                    <option value="">Số người tham dự LỚN hơn 12 tuổi</option>
-                                                </select>
-                                                <div class="sao">*</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <label class="form_item item_checkbox">
-                                                Đăng ký sử dụng Samsung Gear VR
-                                                <input type="checkbox"  >
-                                                 <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-
-                                        <div class="col-md-5">
-                                            <div class="form_item item_select">
-                                                <span class="icon_drop"></span>
-                                                <!-- <label class="error">Err</label> -->
-                                                <select class="input select_nhom">
-                                                    <option value="">Số lượng kính VR</option>
-                                                </select>
-                                                <div class="sao">*</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
                                             <div class="form_item">
-                                                <label>Vui lòng cung cấp thông tin cho những trường hợp đặc biệt cần hỗ trợ</label>
+                                                <!-- <label class="error">Err</label> -->
+                                                <input type="text" placeholder="Số người tham dự" class="input">
+                                                <div class="sao">*</div>
 
-                                                <textarea rows="2" class="input" ></textarea>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form_item item_select style2">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">dd/mm/yyyy</option>
+                                                </select>
+                                                <div class="sao">*</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form_item item_select style2">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">từ 00:00</option>
+                                                </select>
+                                                <div class="sao">*</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form_item item_select style2">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">đến 00:00</option>
+                                                </select>
+                                                <div class="sao">*</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form_item item_select">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">Chọn loại học cụ cho STEM Robotics</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form_item item_select">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">Số lượng học cụ Lego Education</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form_item item_select">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">Số lượng học cụ Samsung Galaxy Tab</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form_item item_select">
+                                                <span class="icon_drop"></span>
+                                                <!-- <label class="error">Err</label> -->
+                                                <select class="input select_nhom">
+                                                    <option value="">Số lượng học cụ Laptop(bao gồm dây sạc + chuột)</option>
+                                                </select>
                                             </div>
                                         </div>
 
@@ -193,15 +242,32 @@
                                             </p>
                                             </div>
                                         </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form_item">
+                                                <label>Vui lòng giới thiệu ngắn về nội dung chủ đề của sự kiện dự định đăng ký tổ chức (không bắt buộc, tối đa 300 ký tự)</label>
+
+                                                <textarea rows="2" class="input" ></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form_item">
+                                                <label>*Vui lòng cung cấp thông tin cho những trường hợp đặc biệt cần hỗ trợ (nếu có)</label>
+
+                                                <textarea rows="2" class="input" ></textarea>
+                                            </div>
+                                        </div>
+
+
                                         <div class="col-md-12">
                                             <div class="form_item tar">
-                                                <a class="button_login button_dk" href="booking_hoantat_datcho_thienvan.html">
-                                        Đăng ký
-                                    </a>
+                                                <a class="button_login button_dk" href="">
+                                                    Đăng ký
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-
 
                                 </div>
 
@@ -216,8 +282,31 @@
                                             <p>
                                                 Tất cả bạn đọc tham dự vui lòng đăng ký thẻ thư viện (nếu chưa có thẻ hoặc thẻ hết hạn), tại Phòng cấp thẻ - Thư viện Khoa học Tổng hợp TP.HCM, 69 Lý Tự Trọng, Quận 1, TP.HCM
                                             </p>
-                                            <p>Trong trường hợp bạn đọc đến trễ hơn 10 phút so với thời gian đã đăng ký đặt chỗ, hệ thống sẽ tự động hủy chỗ cho nhóm khác sử dụng.</p>
+                                            <p>
+                                                HOẠT ĐỘNG MỞ là hoạt động cho phép bạn đọc tự do tham dự. Tùy theo số lượng khán giả mà hoạt động quy định, bạn đọc có thể đăng ký trước qua website S.hub Kids để giữ chỗ.
+                                            </p>
+                                            <p>
+                                                Để tìm hiểu và đăng ký sử dụng các trang thiết bị tại S.hub Kids, bạn đọc vui lòng liên hệ thủ thư qua số điện thoại 028 38 255 055 - số nội bộ 213
+                                            </p>
 
+                                        </div>
+
+                                        <div class="p3">
+                                            <b>Vui lòng cung cấp các nội dung sau đây để hệ thống có thể xét duyệt đăng ký của bạn:</b>
+                                            <p>Nội dung kịch bản tổng quát về chương trình (word + jpeg/png)</p>
+                                            <p>Ban Tổ chức sẽ liên hệ qua email nếu cần bổ sung thêm những thông tin liên quan và trả lời yêu cầu đăng ký của bạn trong vòng 03 ngày làm việc.</p>
+                                        </div>
+
+                                        <table border="0" class="tbl_tailieu">
+                                            <tr>
+                                                <td><a href=""><img src="assets/images/booking/anhbia.png" alt=""></a></td>
+                                                <td><a href=""><img src="assets/images/booking/tailieu.png" alt=""></a></td>
+                                            </tr>
+
+                                        </table>
+
+                                        <div class="p2">
+                                            Vui lòng tham khảo nội quy đăng ký <a href="">tại đây</a>.
                                         </div>
                                     </div>
 
