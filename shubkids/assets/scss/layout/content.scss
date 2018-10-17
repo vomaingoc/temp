@@ -130,54 +130,54 @@
         float: left;
     }
 
-    .col_select_news {
-        display: -webkit-flex;
-        display: -ms-flex;
-        display: flex;
-        align-items: flex-end;
-        float: right;
-        @include mdevice(mobile) {
-            margin-top: 1rem;
-            float: none;
-        }
 
-        .row {
-            width: 100%;
-        }
+}
+.col_select_news {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    @include mdevice(mobile) {
+        margin-top: 1rem;
+        float: none;
+    }
 
-        .item_select {
-            position: relative;
+    .row {
+        width: 100%;
+    }
 
-            .icon_drop {
-                position: absolute;
-                top: 0;
-                right: 0;
-                content: "";
-                background-image: url("../images/icon_dropdown.png");
-                background-size: 100%;
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                z-index: 4;
-                pointer-events: none;
-            }
-        }
+    .item_select {
+        position: relative;
 
-        .select_news {
-            margin-bottom: 2em;
-            width: 100%;
-            background: none;
-            border: none;
-            border-bottom: 2px solid #5f5d5e;
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: $site-color-3;
-            position: relative;
-            padding-bottom: 5px;
+        .icon_drop {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: "";
+            background-image: url("../images/icon_dropdown.png");
+            background-size: 100%;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            z-index: 4;
+            pointer-events: none;
         }
     }
-}
 
+    .select_news {
+        margin-bottom: 2em;
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #5f5d5e;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $site-color-3;
+        position: relative;
+        padding-bottom: 5px;
+    }
+}
 .page_hoatdong {
     .title {
         img {
@@ -2799,13 +2799,439 @@
   }
 
   .row_ds_sukien_col_right{
+    .ds_sukien_tools{
+      padding-top: 1em;
+      padding-bottom: 1em;
+      @include mdevice(phone){
+        padding: 8px;
+      }
+       .col_select_news {
+         .select_news{
+           margin-bottom: 0;
+         }
+
+         .item_select{
+           background-color: #fff;
+         }
+       }
+
+
+
+    }
     .tieude{
       font-weight: bold;
-      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      font-size: 2.4em;
+      display: inline-block;
       color: $site-color-3;
+
       img{
-        height: 40px;
+        height: 50px;
       }
     }
+    .icon_back{
+      cursor: pointer;
+        content: '';
+        display: inline-block;
+        width: 17px;
+        height: 30px;
+        background-image: url("../images/booking/icon_back_tt.png");
+        background-size: 100% 100%;
+        margin-right: 16px;
+    }
+    .scroll_view {
+        padding: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        max-height: 830px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-right: 1em;
+        @include mdevice(phone){
+          max-height: none;
+          padding: 0;
+          margin: 0;
+        }
+        /* width */
+        &::-webkit-scrollbar {
+            width: 20px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            // box-shadow: inset 0 0 5px grey;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #00559D;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #053967;
+        }
+      }
+
+      .chitiet_sukien_content{
+        background-color: #fff;
+
+        .txt_html{
+          img{
+            max-width: 100%;
+          }
+          line-height: 1.6;
+        }
+        .h1{
+          font-weight: 700;
+          color: $site-color-3;
+          font-size: 1.3em;
+          padding: 0;
+          margin: 0;
+          margin-top: 2em;
+          margin-bottom: 2em;
+          @include mdevice(phone) {
+              font-size: 0.9em;
+          }
+        }
+
+        &__img{
+          img{
+            width: 100%;
+          }
+        }
+        .txt_date{
+          position: absolute;
+          top: -60px;
+          background-color: #E4F0F2;
+          padding: 4px 8px;
+          border-bottom: 2px solid #666;
+          font-size: 1.3em;
+          @include mdevice(phone){
+            position: relative;
+            top: 0;
+          }
+          .ss1{
+            font-weight: bold;
+            margin-right: 16px;
+          }
+        }
+        &__txt{
+
+
+          &__1{
+            padding-left: 4em;
+            padding-right: 4em;
+            padding-bottom: 4em;
+            position: relative;
+            @include mdevice(phone){
+              padding: 8px;
+            }
+          }
+
+          &__2{
+            margin-top: 3em;
+            background-color: $site-color-2;
+            .item__1{
+              display: -webkit-flex;
+              display: -ms-flex;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-top: 0.5em;
+              padding-bottom: 0.5em;
+              .sp1{
+                color: $site-color-3;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-right: 12px;
+                font-size: 1.4em;
+
+              }
+
+              .sp2{
+                color: #fff;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+                line-height: 1.1;
+                >*{
+                  display: -webkit-flex;
+                  display: -ms-flex;
+                  display: flex;
+                  flex-direction: column;
+
+                }
+                 .n1{
+                   border-bottom: 2px solid $site-color-3;
+                 }
+              }
+            }
+
+            .item__2{
+              border-top: 2px solid #fff;
+
+              .btndatcho{
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                text-align: center;
+                display: block;
+                line-height: 1.1;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: $site-color-3;
+                text-decoration: none;
+                text-transform: uppercase;
+                img{
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
+
+.list_sukien{
+  padding-right: 16px;
+  padding-bottom: 1em;
+
+grid-gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+
+  @include mdevice(phone){
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    padding: 12px;
+  }
+
+  .item{
+    background-color: #fff;
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        text-align: right;
+        // position: absolute;
+        // bottom: 20px;
+        // right: 2px;
+        @include mdevice(phone) {
+            bottom: 5px;
+        }
+
+        a {
+            padding: 8px 24px;
+            display: inline-block;
+            background: #ECB942;
+            transition: all 0.2s;
+
+            &:hover {
+                @include shadow(bsh2);
+            }
+        }
+
+        img {
+            height: 30px;
+            @include mdevice(phone) {
+                height: 20px;
+            }
+        }
+    }
+
+    &__txt {
+        padding: 24px;
+        position: relative;
+        @include mdevice(phone) {
+            padding: 12px 12px 50px;
+        }
+        .date {
+            margin-bottom: 1em;
+            position: absolute;
+            top: -20px;
+            background-color: #E4F0F2;
+            padding: 4px 8px;
+            border-bottom: 2px solid #666;
+            .ss1{
+              font-weight: bold;
+              margin-right: 16px;
+            }
+            @include mdevice(phone) {
+                margin-bottom: 8px;
+            }
+        }
+
+        .h2 {
+            font-weight: 700;
+            color: $site-color-3;
+            font-size: 1.3em;
+            padding: 0;
+            margin: 0;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            @include mdevice(phone) {
+                font-size: 0.9em;
+            }
+        }
+
+        .desc {
+            text-align: justify;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: '...';
+            @include mdevice(phone) {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-overflow: '...';
+                font-size: 0.9em;
+            }
+        }
+    }
+  }
+}
+
+
+.page_booking_lichhd{
+  padding-bottom: 0;
+  .menu_lichhd{
+    @include clearfix;
+    position: relative;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    &__txt{
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      font-size: 3em;
+      color: $site-color-3;
+    }
+
+    &__tool{
+      float: right;
+      position: absolute;
+
+      top: 0;
+      right: 0;
+      height: 100%;
+
+      &__inner{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        height: 100%;
+        .icon{
+          height: 50%;
+          position: relative;
+          top: 25%;
+          width: 20px;
+          background-image: url("../images/booking/booking_icon_arr_left.png");
+          background-size: 100% 100%;
+          border: none;
+          background-color: transparent;
+
+          &.icon_r{
+            margin-left: 10px;
+            background-image: url("../images/booking/booking_icon_arr_right.png");
+          }
+
+          &.icon_l{
+            margin-right: 10px;
+          }
+        }
+        .tuan{
+          background-color: $site-color-3;
+          color: #fff;
+          height: 100%;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+
+          .sptxt1{
+            display: block;
+            font-size: 1.3em;
+            line-height: 1.1;
+          }
+          .sptxt2{
+            font-size: 2em;
+            font-weight: bold;
+            line-height: 1.1;
+          }
+
+        }
+      }
+    }
+  }
+  .row_lichhd{
+
+
+    &__inner{
+      @include shadow(bsh1);
+      background-color: #fff;
+      padding-top: 1em;
+      padding-left: 4em;
+      padding-right: 4em;
+      padding-bottom: 4em;
+
+      @include mdevice(phone){
+        padding: 8px;
+      }
+    }
+  }
+  .row_lichhd__tools{
+    @include clearfix;
+    .item_select {
+        position: relative;
+        width: 200px;
+        max-width: 100%;
+        float: right;
+        margin: 0;
+        padding: 0;
+        .icon_drop {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            content: "";
+            background-image: url("../images/icon_dropdown_4.png");
+            background-size: 100%;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            z-index: 4;
+            pointer-events: none;
+        }
+    }
+
+    .select_news {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #5f5d5e;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $site-color-1;
+        position: relative;
+        padding-bottom: 5px;
+    }
+  }
+
+  .row_lichhd__content{
+    padding-top: 3em;
+
   }
 }
