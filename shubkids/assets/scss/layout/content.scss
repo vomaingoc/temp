@@ -2392,7 +2392,12 @@
                 }
 
                 &.tr_booking {
-                    background-color: $site-color-2;
+                    &:hover{
+                      background-color: $site-color-2;
+                    }
+                    a{
+                      text-decoration: none;
+                    }
 
                     td {
                         &:nth-child(2) {

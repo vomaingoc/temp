@@ -1898,12 +1898,14 @@ body, html {
         color: #00559D; }
         .page_booking_sankhau .scroll_view table tr.tr_event_2 td:nth-child(1) {
           color: #00559D; }
-      .page_booking_sankhau .scroll_view table tr.tr_booking {
+      .page_booking_sankhau .scroll_view table tr.tr_booking:hover {
         background-color: #FDD602; }
-        .page_booking_sankhau .scroll_view table tr.tr_booking td:nth-child(2) {
-          color: #00559D;
-          font-size: 1.8em;
-          font-weight: 700; }
+      .page_booking_sankhau .scroll_view table tr.tr_booking a {
+        text-decoration: none; }
+      .page_booking_sankhau .scroll_view table tr.tr_booking td:nth-child(2) {
+        color: #00559D;
+        font-size: 1.8em;
+        font-weight: 700; }
 
 .page_booking_thienvan {
   background-size: cover;
