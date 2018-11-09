@@ -1,0 +1,55 @@
+body{
+  font-family: $font1;
+}
+.section{
+  --pdt: 5em;
+  padding-top: var(--pdt);
+  padding-bottom:var(--pdt) ;
+  &__tt{
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $site-color-1;
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+  }
+  &_2{
+    img{
+      max-width: 100%;
+    }
+    .txtsm{
+      font-size: 1.1em;
+      .p1{
+        color: $site-color-1;
+        font-weight: 700;
+        font-size: 1.2em;
+
+      }
+      .p2, .p3{
+        font-weight: 500;
+        font-style: italic;
+      }
+      a{
+        text-decoration: none;
+        color: $site-color-1;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+.list_sp{
+  a{
+    text-decoration: none;
+  }
+  .item{
+    &__txt{
+      font-size: 1.3em;
+      margin: 0;
+      padding: 0;
+      margin-top: 1em;
+      text-align: center;
+    }
+  }
+}

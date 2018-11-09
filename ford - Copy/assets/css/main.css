@@ -5254,105 +5254,58 @@ a {
   border-radius: 0;
   min-height: inherit;
   margin: 0;
-  background-color: #000; }
+  background-color: #028BB8; }
   .p-header nav.navbar h2, .p-header nav.navbar h3, .p-header nav.navbar h4, .p-header nav.navbar h5 {
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 0;
     margin: 0;
-    font-weight: 300; }
+    font-weight: 400; }
     .p-header nav.navbar h2 a, .p-header nav.navbar h3 a, .p-header nav.navbar h4 a, .p-header nav.navbar h5 a {
       padding: 0.8em 1.2em;
       display: block;
       text-decoration: none; }
   .p-header nav.navbar h2 a {
-    color: #fff;
-    text-transform: uppercase; }
-  .p-header nav.navbar h3 a {
-    color: #000;
-    text-transform: uppercase;
-    white-space: nowrap;
-    font-size: 0.9em;
-    padding: 1em; }
-    .p-header nav.navbar h3 a:hover {
-      color: #028BB8; }
+    color: #fff; }
 
 .p-header .navbar-brand {
   height: auto;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: none; }
   .isMobile .p-header .navbar-brand {
     display: inherit; }
   .p-header .navbar-brand img {
-    height: 40px; }
+    height: 90px; }
   .isMobile .p-header .navbar-brand img {
     height: 50px; }
 
-.p-header .nav.navbar-nav {
-  float: right; }
-  .isMobile .p-header .nav.navbar-nav {
-    float: none;
-    margin-top: 0; }
-
-.isDesktop .p-header .li1 .dropdown-menu {
-  visibility: hidden;
-  display: block;
-  padding-top: 3px;
-  background-color: transparent;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin-top: 3px;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s; }
-  .isDesktop .p-header .li1 .dropdown-menu li {
-    background-color: #fff;
-    border-bottom: 1px solid #eee; }
-
-.isDesktop .p-header .li1:hover .dropdown-menu {
-  visibility: visible;
+.isMobile .p-header .nav.navbar-nav {
+  float: none;
   margin-top: 0; }
 
-.p-header__top {
-  background-color: #000;
-  color: #fff;
-  border-bottom: 1px solid #555; }
-  .p-header__top__inner {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .p-header__top__inner .phone_contact {
-      text-align: right;
-      font-size: 1em;
-      font-weight: 400; }
-      .p-header__top__inner .phone_contact a {
+.p-header__top__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .p-header__top__inner .phone_contact {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 400; }
+    .p-header__top__inner .phone_contact__inner {
+      text-align: left;
+      display: inline-block; }
+    .p-header__top__inner .phone_contact .number {
+      margin-bottom: 0.3em; }
+      .p-header__top__inner .phone_contact .number a {
         text-decoration: none;
-        color: #fff;
+        color: red;
         font-weight: 700;
         font-size: 1.1em; }
-      .p-header__top__inner .phone_contact .icon {
-        font-size: 1.2em; }
-      .p-header__top__inner .phone_contact__inner {
-        text-align: left;
-        display: inline-block; }
-      .p-header__top__inner .phone_contact .number {
-        margin-bottom: 0.3em; }
-  .p-header__top .link_social {
-    margin-left: 24px; }
-    .p-header__top .link_social__item {
-      cursor: pointer;
-      width: 20px;
-      height: 20px;
-      display: inline-block; }
-      .p-header__top .link_social__item:hover {
-        color: #028BB8; }
 
 .p-header .dropdown_sp {
   position: static; }
@@ -5381,7 +5334,7 @@ a {
   .p-header #dropdown_menu_sanpham .dropdown_sp__inner {
     background: #fff;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 16px;
     padding: 16px; }
   .p-header #dropdown_menu_sanpham .item {

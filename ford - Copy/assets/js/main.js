@@ -32,6 +32,13 @@ $('.slide_sp_home').owlCarousel({
         }
     }
 })
+// $(".dropdown_sp").on('mouseover', function () {
+//   $(this).addClass("open")
+// })
+//
+// $("#dropdown_menu_sanpham").on("mouseleave",function () {
+//   $(".dropdown_sp").removeClass("open")
+// })
 
 $(".chk_color_box .list-color li span").on('click', function () {
   var inner = $(this).closest('.chk_color_box');
@@ -42,8 +49,3 @@ $(".chk_color_box .list-color li span").on('click', function () {
       $(inner).find(".img_box img").attr("src", image);
    }
 })
-
-$(".p-header .phone_contact .icon i ").addClass("tada animated infinite");
-$(document).ready(function() {
-
-});
