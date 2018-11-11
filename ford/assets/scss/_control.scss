@@ -93,13 +93,15 @@
 // }
 
 .p-tools {
-  background-color: #eee;
+  background-color: #f5f5f5;
   padding-top: 1em;
   padding-bottom: 1em;
 
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+
 
     .item {
       display: -webkit-flex;
@@ -110,6 +112,7 @@
       text-decoration: none;
       padding-top: 1em;
       padding-bottom: 1em;
+      transition: all 0.3s;
 
       &__txt {
         text-transform: uppercase;
@@ -122,6 +125,7 @@
       &__img {
         border: 4px solid transparent;
         border-radius: 50%;
+        transition: all 0.3s;
       }
 
       &:hover {
@@ -134,26 +138,44 @@
         }
       }
     }
-  }
-}
+    @include mdevice(phone){
+        grid-template-columns:1fr;
 
-.slide_sp_home {
-  .item {
-    padding: 24px 24px 0;
-
-    .item__img {
-      img {
-        &:nth-child(1) {
-          display: none;
+        .item{
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            img{
+                height: 50px;
+            }
         }
-      }
     }
   }
 }
 
 .slide_sp_home {
+    padding-left: 1em;
+    padding-right: 1em;
+  .item {
+    padding: 0px 12px;
+    .inner{
+        background-color: #fff;
+        padding: 12px;
+    }
+
+    .item__img {
+      img {
+        &:nth-child(1) {
+          //display: none;
+        }
+      }
+    }
+  }
+
   .owl-dots {
     bottom: -4em;
+    @include mdevice(phone){
+        bottom: -2em;
+    }
   }
   .owl-nav{
     .owl-prev{
@@ -169,7 +191,7 @@
 .mybtn{
   text-transform: uppercase;
   text-align: center;
-  padding:0.2em 0.5em;
+  padding:0.5em 0.5em 0.4em 0.5em;
   background-color: $site-color-1;
   color: #fff;
   text-decoration: none !important;
@@ -178,15 +200,63 @@
   font-size: 1em;
   font-weight: 600;
   transition: all 0.3s;
-  & + .mybtn{
-    margin-left: 1em;
+  border-radius: 5px;
+
+  &.md_width{
+      width: 150px;
   }
+
   @include mdevice(mobile){
     height: auto;
     line-height: inherit;
     font-size: 1em;
   }
+
+
   &:hover{
       background-color: $site-color-2;
+      color: #fff;
   }
+}
+.tool_filter_car{
+    margin-bottom: 2em;
+    .tool_tt{
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+}
+
+
+.infor_contact{
+    text-align: center;
+    font-size:  1.2em;
+    .tool_tt{
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+    .txt_desc{
+        text-align: left;
+        font-size: 0.9em;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .mybtn{
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .hotline{
+        margin-top: 0.5em;
+        .txt2{
+            font-weight: 500;
+            text-decoration: none;
+            color:$site-color-1;
+        }
+    }
 }

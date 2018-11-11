@@ -18,7 +18,7 @@
       margin: 0;
       font-weight: 300;
       a{
-        padding: 0.8em 1.2em;
+        padding: 1em 1.2em;
         display: block;
         text-decoration: none;
       }
@@ -27,6 +27,10 @@
       a{
         color: #fff;
         text-transform: uppercase;
+        @include mdevice(mobile) {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
       }
     }
     h3{
@@ -36,6 +40,11 @@
         white-space: nowrap;
         font-size: 0.9em;
         padding: 1em;
+        @include mdevice(mobile) {
+            padding-left:3em;
+            padding-right: 2em;
+            color: #fff;
+        }
         &:hover{
           color: $site-color-1;
         }
@@ -48,6 +57,10 @@
     padding: 0;
     margin: 0;
     //display: none;
+    position: relative;
+    z-index: 2;
+    margin-top: 6px;
+    margin-bottom: 6px;
     @include mdevice(mobile){
       display: inherit;
     }
@@ -57,13 +70,14 @@
     }
     @include mdevice(mobile) {
       img {
-        height: 50px;
+        height:40px;
       }
     }
   }
 
   .nav.navbar-nav {
     float: right;
+    margin-top: 8px;
     @include mdevice(mobile) {
       float: none;
       margin-top: 0;
@@ -108,10 +122,17 @@
       grid-template-columns: repeat(2, 1fr);
       justify-content: flex-end;
       align-items: center;
+
+      @include mdevice(mobile) {
+          grid-template-columns: repeat(1, 1fr);
+      }
       .phone_contact{
         text-align: right;
         font-size: 1em;
         font-weight: 400;
+        @include mdevice(mobile) {
+            text-align: left;
+        }
         a{
           text-decoration: none;
           color: #fff;
@@ -133,6 +154,10 @@
     }
     .link_social{
       margin-left: 24px;
+      @include mdevice(mobile) {
+          display: block;
+          margin-left: 0;
+      }
       &__item{
         cursor: pointer;
         width: 20px;
@@ -200,7 +225,7 @@
         img{
           display: inline-block;
           max-width: 100%;
-          &:nth-child(1){
+          &:nth-child(2){
             display: none;
           }
         }
