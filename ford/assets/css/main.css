@@ -5437,9 +5437,31 @@ a {
 .p-header #navbar {
   padding: 0;
   position: relative; }
+  .isPhone .p-header #navbar {
+    position: fixed;
+    left: -130vw;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    display: block;
+    height: 100vh !important;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    width: calc(100% + 30px - 90px);
+    background-color: #000;
+    z-index: 9; }
+    .isPhone .p-header #navbar .navbar-nav {
+      margin: 1em; }
+    .isPhone .p-header #navbar.in {
+      left: 0; }
 
-.p-header .navbar-toggle .icon-bar {
-  background-color: #fff; }
+.p-header .navbar-toggle {
+  z-index: 10; }
+  .p-header .navbar-toggle.collapsed {
+    position: relative; }
+  .p-header .navbar-toggle .icon-bar {
+    background-color: #fff; }
 
 .p-header nav.navbar {
   border-radius: 0;
@@ -5517,9 +5539,8 @@ a {
   margin-top: 0; }
 
 .p-header__top {
-  background-color: #000;
-  color: #fff;
-  border-bottom: 1px solid #555; }
+  background-color: #028BB8;
+  color: #fff; }
   .p-header__top__inner {
     padding-top: 0.8em;
     padding-bottom: 0.8em;

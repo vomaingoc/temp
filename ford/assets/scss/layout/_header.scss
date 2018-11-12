@@ -2,9 +2,41 @@
   #navbar {
     padding: 0;
     position: relative;
+    @include mdevice(phone){
+      position: fixed;
+     left: -130vw;
+     transition: all .1s;
+     display: block;
+     //height: calc(100vh - 165px ) !important;
+     height: 100vh !important;
+    //  top: 165px;
+    top: 0;
+      bottom: 0;
+      overflow: auto;
+      width: calc(100% + 30px - 90px);
+      background-color: #000;
+      z-index: 9;
+      .navbar-nav{
+        margin: 1em
+      }
+      &.in{
+        left: 0;
+      }
+    }
   }
-  .navbar-toggle .icon-bar{
-    background-color: #fff;
+  .navbar-toggle{
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // transition-delay: 0.3s;
+    // transition: all 0.5s;
+    &.collapsed{
+      position: relative
+    }
+    z-index: 10;
+    .icon-bar{
+     background-color: #fff;
+   }
   }
 
   nav.navbar {
@@ -112,9 +144,9 @@
   }
 
   &__top {
-    background-color: #000;
+    background-color: $site-color-1;
     color: #fff;
-    border-bottom: 1px solid #555;
+    // border-bottom: 1px solid #555;
     &__inner{
       padding-top: 0.8em;
       padding-bottom: 0.8em;
