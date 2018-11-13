@@ -5185,6 +5185,9 @@ a {
   text-decoration: none;
   outline: 0; }
 
+.p_detail .infor_contact {
+  margin-top: 2em; }
+
 .p_detail .info_dt {
   font-size: 1.1em; }
   .p_detail .info_dt > * {
@@ -5192,7 +5195,8 @@ a {
   .p_detail .info_dt .txt1 {
     font-size: 1.6em;
     font-weight: 500;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    text-transform: uppercase; }
     .isPhone .p_detail .info_dt .txt1 {
       font-size: 1.2em; }
   .p_detail .info_dt .txt2 {
@@ -5220,8 +5224,7 @@ a {
       margin-top: 1em; }
 
 .p_detail .chk_color_box {
-  text-align: center;
-  /*Mau sac xe*/ }
+  text-align: center; }
   .p_detail .chk_color_box .txt-color {
     font-size: 1.3rem;
     color: #000;
@@ -5234,17 +5237,19 @@ a {
     text-align: center;
     margin: 1em auto;
     width: auto;
-    display: inline-block; }
+    display: inline-block;
+    padding: 0; }
     .p_detail .chk_color_box .list-color ul li {
       cursor: pointer;
       display: inline-block;
-      text-align: left; }
+      text-align: left;
+      margin: 8px; }
       .p_detail .chk_color_box .list-color ul li.active span {
         border-color: #000; }
       .p_detail .chk_color_box .list-color ul li span {
-        height: 35px;
-        width: 35px;
-        border-radius: 35px;
+        height: 25px;
+        width: 25px;
+        border-radius: 25px;
         display: block;
         position: relative;
         border: 1px solid #DEDEDE;
@@ -5272,30 +5277,30 @@ a {
     .p_detail .chk_color_box .img_box img {
       max-width: 100%; }
 
-.p_detail .noi_dung_bai_viet {
-  line-height: 1.8; }
-  .isPhone .p_detail .noi_dung_bai_viet h2 {
-    font-size: 1.1em !important; }
-  .p_detail .noi_dung_bai_viet img {
-    max-width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  .p_detail .noi_dung_bai_viet .img_small {
-    display: inline-block;
-    height: 200px;
-    width: 32%;
-    overflow: hidden; }
-    .isPhone .p_detail .noi_dung_bai_viet .img_small {
-      width: 48%;
-      height: 100%; }
-    .p_detail .noi_dung_bai_viet .img_small img {
-      height: 100%;
-      width: 100%; }
-
 .p_detail .section__tt_2 {
   margin-top: 2em;
   font-size: 2em;
   padding-bottom: 0.5em; }
+
+.noi_dung_bai_viet {
+  line-height: 1.8; }
+  .isPhone .noi_dung_bai_viet h2 {
+    font-size: 1.1em !important; }
+  .noi_dung_bai_viet img {
+    max-width: 100% !important;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .noi_dung_bai_viet .img_small {
+    display: inline-block;
+    height: 200px;
+    width: 32%;
+    overflow: hidden; }
+    .isPhone .noi_dung_bai_viet .img_small {
+      width: 48%;
+      height: 100%; }
+    .noi_dung_bai_viet .img_small img {
+      height: 100%;
+      width: 100%; }
 
 .list_news {
   display: grid;
@@ -5434,10 +5439,65 @@ a {
   .address_contact a {
     font-size: 1.1em; }
 
+.phienbanxe_theodong {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.isMobile .form_bao_gia .cols1 img {
+  display: none; }
+
+.form_bao_gia .mybtn.phone {
+  font-size: 1.4em; }
+
+.form_bao_gia img {
+  max-width: 100%; }
+
+.form_bao_gia .form__tt {
+  font-size: 1.5em;
+  font-weight: 500; }
+
+.form_bao_gia .form__desc {
+  font-size: 1.2em; }
+
+.form_bao_gia .form__ct .mybtn {
+  margin-top: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em; }
+
+.form_bao_gia .form__ct .form-group {
+  margin-bottom: 1.8em; }
+
+.form_bao_gia .form__ct .form-control {
+  font-size: 1.2em;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.form_bao_gia .form__ct__tt {
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  padding: 0.5em 1em;
+  margin-top: 1em; }
+  .form_bao_gia .form__ct__tt .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px; }
+  .form_bao_gia .form__ct__tt .txt {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500; }
+  .form_bao_gia .form__ct__tt i {
+    font-size: 2.5em; }
+
 .p-header #navbar {
   padding: 0;
   position: relative; }
-  .isPhone .p-header #navbar {
+  .isMobile .p-header #navbar {
     position: fixed;
     left: -130vw;
     -webkit-transition: all .1s;
@@ -5449,25 +5509,39 @@ a {
     bottom: 0;
     overflow: auto;
     width: calc(100% + 30px - 90px);
-    background-color: #000;
+    background-color: #fff;
     z-index: 9; }
-    .isPhone .p-header #navbar .navbar-nav {
+    .isMobile .p-header #navbar .navbar-nav {
       margin: 1em; }
-    .isPhone .p-header #navbar.in {
+    .isMobile .p-header #navbar.in {
       left: 0; }
+
+.isMobile .p-header .navbar-header {
+  float: none; }
 
 .p-header .navbar-toggle {
   z-index: 10; }
+  .isMobile .p-header .navbar-toggle {
+    display: block;
+    margin-right: 0; }
   .p-header .navbar-toggle.collapsed {
     position: relative; }
   .p-header .navbar-toggle .icon-bar {
-    background-color: #fff; }
+    background-color: #000; }
 
 .p-header nav.navbar {
   border-radius: 0;
   min-height: inherit;
   margin: 0;
-  background-color: #000; }
+  background-color: #fff; }
+  .isMobile .p-header nav.navbar .dropdown-menu {
+    float: none;
+    position: relative;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .isMobile .p-header nav.navbar li {
+    float: none; }
   .p-header nav.navbar h2, .p-header nav.navbar h3, .p-header nav.navbar h4, .p-header nav.navbar h5 {
     font-size: 1em;
     padding: 0;
@@ -5478,12 +5552,16 @@ a {
       display: block;
       text-decoration: none; }
   .p-header nav.navbar h2 a {
-    color: #fff;
+    color: #000;
+    font-weight: 500;
     text-transform: uppercase; }
     .isMobile .p-header nav.navbar h2 a {
       padding-left: 2em;
       padding-right: 2em; }
+    .p-header nav.navbar h2 a:hover {
+      color: #028BB8; }
   .p-header nav.navbar h3 a {
+    font-weight: 400;
     color: #000;
     text-transform: uppercase;
     white-space: nowrap;
@@ -5491,8 +5569,7 @@ a {
     padding: 1em; }
     .isMobile .p-header nav.navbar h3 a {
       padding-left: 3em;
-      padding-right: 2em;
-      color: #fff; }
+      padding-right: 2em; }
     .p-header nav.navbar h3 a:hover {
       color: #028BB8; }
 
@@ -5505,7 +5582,8 @@ a {
   margin-top: 6px;
   margin-bottom: 6px; }
   .isMobile .p-header .navbar-brand {
-    display: inherit; }
+    display: inherit;
+    margin-left: 0; }
   .p-header .navbar-brand img {
     height: 40px; }
   .isMobile .p-header .navbar-brand img {
@@ -5783,13 +5861,15 @@ a {
   border-radius: 5px; }
   .mybtn.md_width {
     width: 150px; }
+  .mybtn.full_width {
+    width: 100%; }
   .isMobile .mybtn {
     height: auto;
     line-height: inherit;
     font-size: 1em; }
-  .mybtn:hover {
+  .mybtn:hover, .mybtn:focus {
     background-color: #3095CC;
-    color: #fff; }
+    color: #fff !important; }
 
 .tool_filter_car {
   margin-bottom: 2em; }
@@ -5825,6 +5905,9 @@ a {
 
 body {
   font-family: "Roboto", sans-serif; }
+
+.tac {
+  text-align: center; }
 
 .section {
   --pdt: 5em;
@@ -5903,7 +5986,7 @@ body {
   .section_0 .txtsm {
     font-size: 1.2em;
     text-align: justify; }
-    .isPhone .section_0 .txtsm {
+    .isMobile .section_0 .txtsm {
       margin-bottom: 2em; }
   .section_1 {
     background-color: #f4f4f4; }
@@ -5956,3 +6039,6 @@ body {
 
 .isMobile .hide-mobile {
   display: none; }
+
+.isMobile .container {
+  width: 100%; }

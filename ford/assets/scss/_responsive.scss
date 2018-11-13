@@ -9,3 +9,10 @@
         display: none;
     }
 }
+
+
+.container{
+  @include mdevice(mobile){
+      width: 100%;
+  }
+}
