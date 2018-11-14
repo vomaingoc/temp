@@ -2,16 +2,66 @@
   #navbar {
     padding: 0;
     position: relative;
+    @include mdevice(mobile){
+      position: fixed;
+     left: -130vw;
+     transition: all .1s;
+     display: block;
+     //height: calc(100vh - 165px ) !important;
+     height: 100vh !important;
+    //  top: 165px;
+    top: 0;
+      bottom: 0;
+      overflow: auto;
+      width: calc(100% + 30px - 90px);
+      background-color: #fff;
+      z-index: 9;
+      .navbar-nav{
+        margin: 1em
+      }
+      &.in{
+        left: 0;
+      }
+    }
   }
-  .navbar-toggle .icon-bar{
-    background-color: #fff;
+  .navbar-header{
+    @include mdevice(mobile){
+      float: none;
+    }
+  }
+  .navbar-toggle{
+    @include mdevice(mobile){
+      display: block;
+      margin-right: 0;
+    }
+    &.collapsed{
+      position: relative
+    }
+    z-index: 10;
+    .icon-bar{
+     background-color: #000;
+   }
   }
 
   nav.navbar {
     border-radius: 0;
     min-height: inherit;
     margin: 0;
-    background-color: #000;
+    background-color: #fff;
+    .dropdown-menu{
+      @include mdevice(mobile){
+        float: none;
+        position: relative;
+        border: none;
+        box-shadow: none;
+        
+      }
+    }
+    li{
+      @include mdevice(mobile){
+        float: none;
+      }
+    }
     h2,h3,h4,h5{
       font-size: 1em;
       padding: 0;
@@ -25,16 +75,21 @@
     }
     h2{
       a{
-        color: #fff;
+        color: #000;
+        font-weight: 500;
         text-transform: uppercase;
         @include mdevice(mobile) {
             padding-left: 2em;
             padding-right: 2em;
         }
+        &:hover{
+          color: $site-color-1;
+        }
       }
     }
     h3{
       a{
+        font-weight: 400;
         color: #000;
         text-transform: uppercase;
         white-space: nowrap;
@@ -43,7 +98,6 @@
         @include mdevice(mobile) {
             padding-left:3em;
             padding-right: 2em;
-            color: #fff;
         }
         &:hover{
           color: $site-color-1;
@@ -63,6 +117,7 @@
     margin-bottom: 6px;
     @include mdevice(mobile){
       display: inherit;
+      margin-left: 0;
     }
 
     img {
@@ -112,9 +167,9 @@
   }
 
   &__top {
-    background-color: #000;
+    background-color: $site-color-1;
     color: #fff;
-    border-bottom: 1px solid #555;
+    // border-bottom: 1px solid #555;
     &__inner{
       padding-top: 0.8em;
       padding-bottom: 0.8em;
