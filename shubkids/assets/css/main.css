@@ -1734,6 +1734,17 @@ body, html {
     .page_booking_huongdan .section_1 .row_huongdan {
       position: relative;
       padding-bottom: 5em; }
+      .page_booking_huongdan .section_1 .row_huongdan .txt2 {
+        font-weight: 500;
+        font-size: 0.9em;
+        line-height: 1.6; }
+      .page_booking_huongdan .section_1 .row_huongdan > .col-md-6 {
+        width: 50%;
+        float: left; }
+        .isPhone .page_booking_huongdan .section_1 .row_huongdan > .col-md-6 {
+          width: 100%; }
+      .isPhone .page_booking_huongdan .section_1 .row_huongdan .line {
+        display: none; }
       .page_booking_huongdan .section_1 .row_huongdan .line-1 {
         position: absolute;
         bottom: 0;
@@ -1764,10 +1775,26 @@ body, html {
         width: 20px;
         background-color: #fff;
         background-color: #6AB5E4; }
+      .page_booking_huongdan .section_1 .row_huongdan .text_note {
+        padding-left: 4em;
+        margin-top: 3em;
+        color: #fff;
+        padding-right: 2em;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.8; }
+        .isPhone .page_booking_huongdan .section_1 .row_huongdan .text_note {
+          padding-left: 0;
+          padding-right: 0;
+          padding: 1em;
+          background-color: rgba(0, 0, 0, 0.5); }
+        .page_booking_huongdan .section_1 .row_huongdan .text_note .btngr {
+          margin-top: 2em; }
   .page_booking_huongdan .item-hd {
     background-color: #fff;
     padding: 1em 2em;
-    margin-top: 3em; }
+    margin-top: 3em;
+    position: relative; }
     .page_booking_huongdan .item-hd .txt1 {
       position: relative;
       margin-top: -3.7em; }
@@ -1790,12 +1817,26 @@ body, html {
         padding-left: 1em; }
     .page_booking_huongdan .item-hd.item-1 {
       background-color: #FDD602; }
+      .page_booking_huongdan .item-hd.item-1:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        background-color: #FDD602;
+        border-radius: 0 0 200px 0;
+        display: none;
+        background-color: #fff; }
       .page_booking_huongdan .item-hd.item-1 .txt1 {
         margin-top: -2em; }
     .page_booking_huongdan .item-hd.item-2 {
       background-color: #BCBDBF;
       margin-right: 30px;
       margin-top: 6em; }
+      .isPhone .page_booking_huongdan .item-hd.item-2 {
+        margin-bottom: 3em; }
     .page_booking_huongdan .item-hd.item-3 {
       background-color: #6AB5E4; }
 
@@ -1898,10 +1939,13 @@ body, html {
         color: #00559D; }
         .page_booking_sankhau .scroll_view table tr.tr_event_2 td:nth-child(1) {
           color: #00559D; }
+      .page_booking_sankhau .scroll_view table tr.tr_booking a {
+        opacity: 0;
+        text-decoration: none; }
       .page_booking_sankhau .scroll_view table tr.tr_booking:hover {
         background-color: #FDD602; }
-      .page_booking_sankhau .scroll_view table tr.tr_booking a {
-        text-decoration: none; }
+        .page_booking_sankhau .scroll_view table tr.tr_booking:hover a {
+          opacity: 1; }
       .page_booking_sankhau .scroll_view table tr.tr_booking td:nth-child(2) {
         color: #00559D;
         font-size: 1.8em;

@@ -1,0 +1,11 @@
+.only-show-mobile{
+  @include mdevice(desktop){
+    display: none;
+  }
+}
+
+.hide-on-mobile{
+  @include mdevice(mobile){
+    display: none;
+  }
+}

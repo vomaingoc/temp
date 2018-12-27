@@ -2139,6 +2139,25 @@
         .row_huongdan {
             position: relative;
             padding-bottom: 5em;
+            .txt2{
+              font-weight: 500;
+              font-size: 0.9em;
+              line-height: 1.6;
+            }
+
+            >.col-md-6{
+              width: 50%;
+              float: left;
+              @include mdevice(phone){
+                width: 100%;
+              }
+            }
+
+            .line{
+              @include mdevice(phone){
+                display: none;
+              }
+            }
 
             .line-1 {
                 position: absolute;
@@ -2173,6 +2192,25 @@
                 background-color: #fff;
                 background-color: $site-color-1;
             }
+
+            .text_note{
+              padding-left: 4em;
+              margin-top: 3em;
+              color: #fff;
+              padding-right: 2em;
+              font-size: 1.2em;
+              font-weight: 500;
+              line-height: 1.8;
+              @include mdevice(phone){
+                padding-left: 0;
+                padding-right: 0;
+                padding: 1em;
+                background-color: rgba(0,0,0,.5);
+              }
+              .btngr{
+                margin-top: 2em;
+              }
+            }
         }
     }
 
@@ -2180,6 +2218,7 @@
         background-color: #fff;
         padding: 1em 2em;
         margin-top: 3em;
+        position: relative;
         .txt1{
           position: relative;
           margin-top: -3.7em;
@@ -2218,6 +2257,23 @@
 
         &.item-1 {
             background-color: $site-color-2;
+
+
+            &:after{
+              content: "";
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 100px;
+              height: 50px;
+
+              display: inline-block;
+                background-color: $site-color-2;
+                border-radius:0 0 200px 0;
+                display: none;
+
+                background-color: #fff;
+            }
             .txt1{
 
               margin-top: -2em;
@@ -2228,6 +2284,9 @@
             background-color: #BCBDBF;
             margin-right: 30px;
             margin-top: 6em;
+            @include mdevice(phone){
+              margin-bottom: 3em;
+            }
         }
 
         &.item-3 {
@@ -2392,12 +2451,17 @@
                 }
 
                 &.tr_booking {
+                  a{
+                    opacity: 0;
+                    text-decoration: none;
+                  }
                     &:hover{
                       background-color: $site-color-2;
+                      a{
+                        opacity: 1;
+                      }
                     }
-                    a{
-                      text-decoration: none;
-                    }
+   
 
                     td {
                         &:nth-child(2) {
